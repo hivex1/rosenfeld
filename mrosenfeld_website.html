@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael J. Rosenfeld — Department of Sociology, Stanford University</title>
+<meta name="description" content="Homepage of Michael J. Rosenfeld, Professor of Sociology at Stanford University. Research on mating, dating, family, and the Internet's effect on society.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cardinal:#8C1515;
+  --cardinal-dark:#6b1010;
+  --ink:#241f1a;
+  --ink-soft:#4a443c;
+  --muted:#736b60;
+  --paper:#fffdfa;
+  --panel:#f6f2ea;
+  --border:#e6ded0;
+  --border-soft:#efe9dd;
+  --max:1040px;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(36,31,26,.04), 0 8px 24px -12px rgba(36,31,26,.15);
+  --shadow-lg:0 20px 50px -20px rgba(36,31,26,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:'Source Serif 4',Georgia,serif;
+  color:var(--ink);
+  line-height:1.2;
+  margin:0 0 .5em;
+}
+p{margin:0 0 1em}
+a{color:var(--cardinal)}
+a:hover{color:var(--cardinal-dark)}
+img{max-width:100%;height:auto}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.skip-link{
+  position:absolute;left:-999px;top:0;background:var(--cardinal);color:#fff;
+  padding:10px 16px;z-index:1000;border-radius:0 0 8px 0;
+}
+.skip-link:focus{left:0}
+
+/* ---------- Top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,253,250,.9);
+  backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--border-soft);
+}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{
+  font-family:'Source Serif 4',serif;font-weight:700;font-size:1.05rem;
+  color:var(--ink);text-decoration:none;letter-spacing:.2px;
+}
+.topnav{display:flex;gap:28px}
+.topnav a{
+  color:var(--ink-soft);text-decoration:none;font-size:.92rem;font-weight:500;
+  padding:6px 2px;border-bottom:2px solid transparent;transition:.15s;
+}
+.topnav a:hover{color:var(--cardinal);border-bottom-color:var(--cardinal)}
+
+/* ---------- Hero ---------- */
+.hero{padding:72px 0 56px;background:
+  radial-gradient(1100px 480px at 85% -10%, #f8ece7 0%, rgba(248,236,231,0) 60%),var(--paper);}
+.hero-inner{display:flex;align-items:center;gap:56px;justify-content:space-between}
+.hero-text{flex:1;min-width:280px}
+.eyebrow{
+  text-transform:uppercase;letter-spacing:1.4px;font-size:.76rem;font-weight:600;
+  color:var(--cardinal);margin-bottom:14px;
+}
+.hero h1{font-size:2.75rem;margin-bottom:.15em}
+.hero-role{font-size:1.2rem;color:var(--ink-soft);margin-bottom:18px;font-weight:500}
+.hero-desc{max-width:52ch;color:var(--ink-soft);font-size:1.02rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{
+  display:inline-block;padding:11px 20px;border-radius:9px;text-decoration:none;
+  font-weight:600;font-size:.92rem;transition:.15s;border:1.5px solid transparent;
+}
+.btn-primary{background:var(--cardinal);color:#fff}
+.btn-primary:hover{background:var(--cardinal-dark);color:#fff}
+.btn-ghost{border-color:var(--border);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--cardinal);color:var(--cardinal)}
+.hero-photo{flex-shrink:0}
+.hero-photo img{
+  width:230px;height:auto;border-radius:16px;box-shadow:var(--shadow-lg);
+  border:6px solid #fff;
+}
+
+/* ---------- Sections ---------- */
+.section{padding:64px 0}
+.section.alt{background:var(--panel);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft)}
+.section-title{font-size:1.9rem;margin-bottom:8px}
+.section-lede{color:var(--muted);margin-bottom:28px;font-size:.98rem}
+.subsection-title{font-size:1.25rem;margin-top:40px;margin-bottom:16px}
+
+/* ---------- Contact card ---------- */
+.card{
+  background:#fff;border:1px solid var(--border-soft);border-radius:var(--radius);
+  padding:26px 28px;box-shadow:var(--shadow);max-width:420px;
+}
+.card-eyebrow{
+  font-size:.76rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--cardinal);
+  font-family:'Inter',sans-serif;font-weight:700;margin-bottom:14px;
+}
+.contact-name{font-weight:700;font-size:1.05rem;margin-bottom:2px}
+.contact-links{margin-top:14px}
+
+/* ---------- Quick links ---------- */
+.quicklink-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:8px}
+.quicklink{
+  display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--border-soft);
+  border-radius:11px;padding:14px 16px;text-decoration:none;color:var(--ink);
+  font-size:.94rem;font-weight:500;transition:.15s;box-shadow:var(--shadow);
+}
+.quicklink:hover{border-color:var(--cardinal);transform:translateY(-1px);color:var(--cardinal-dark)}
+.ql-icon{font-size:1.15rem;flex-shrink:0}
+
+/* ---------- Prose / legacy content de-tableizing ---------- */
+.prose{font-size:1rem;color:var(--ink);overflow-wrap:break-word;word-break:break-word}
+.legacy-content table,
+.legacy-content tbody,
+.legacy-content tr,
+.legacy-content td,
+.legacy-content th,
+.course-body table,
+.course-body tbody,
+.course-body tr,
+.course-body td,
+.course-body th{
+  display:block;
+  width:auto;
+  max-width:100%;
+  border:none;
+  background:transparent;
+  padding:0;
+  margin:0;
+}
+.legacy-content p, .course-body p{margin:0 0 1em;line-height:1.7;color:var(--ink-soft)}
+.legacy-content a, .course-body a{color:var(--cardinal);text-decoration:underline;text-decoration-color:#d8b9b9;overflow-wrap:break-word}
+.legacy-content a:hover, .course-body a:hover{color:var(--cardinal-dark);text-decoration-color:var(--cardinal-dark)}
+.legacy-content b, .legacy-content strong,
+.course-body b, .course-body strong{color:var(--ink);font-weight:700}
+.legacy-content > *:first-child{margin-top:0}
+
+/* space between sibling tables/rows so publication entries and course-material
+   blocks read as distinct items instead of running together */
+.legacy-content > table, .course-body > table{margin-bottom:28px}
+.legacy-content > table:last-child, .course-body > table:last-child{margin-bottom:0}
+.pubs > table > tr{
+  padding-bottom:22px;margin-bottom:22px !important;
+  border-bottom:1px solid var(--border-soft);
+}
+.pubs > table > tr:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.course-body table tr{margin-bottom:10px}
+
+/* Book cover + figure images inside prose */
+.legacy-content img{
+  display:block;margin:18px auto;border-radius:8px;box-shadow:var(--shadow);
+}
+.legacy-content img[src*="Rosenfeld_Rainbow"],
+.legacy-content img[src*="book_cover_paperback"]{max-width:200px;width:100%}
+.legacy-content img[src*="Rosenfeld_how_hetero_couples_met"]{max-width:640px;width:100%}
+
+hr{border:none;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- Teaching / courses ---------- */
+.class-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.class-nav a{
+  font-size:.82rem;font-weight:600;color:var(--ink-soft);background:#fff;
+  border:1px solid var(--border-soft);padding:6px 12px;border-radius:999px;text-decoration:none;
+}
+.class-nav a:hover{border-color:var(--cardinal);color:var(--cardinal)}
+
+.courses{display:flex;flex-direction:column;gap:14px}
+.course{
+  background:#fff;border:1px solid var(--border-soft);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);scroll-margin-top:84px;
+}
+.course[open]{border-color:var(--cardinal)}
+.course summary{
+  cursor:pointer;list-style:none;padding:18px 22px;display:flex;flex-wrap:wrap;
+  align-items:baseline;gap:10px 16px;font-size:.98rem;
+}
+.course summary::-webkit-details-marker{display:none}
+.course summary::before{
+  content:'+';font-family:'Inter',sans-serif;font-weight:700;color:var(--cardinal);
+  font-size:1.1rem;width:16px;flex-shrink:0;
+}
+.course[open] summary::before{content:'\2212'}
+.course-code{font-weight:700;color:var(--cardinal);font-family:'Source Serif 4',serif;font-size:1.05rem;flex-shrink:0}
+.course-title{color:var(--ink);font-weight:500;flex:1 1 240px}
+.course-term{color:var(--muted);font-size:.85rem;flex-shrink:0;margin-left:auto}
+.course-body{padding:18px 22px 26px 38px;border-top:1px solid var(--border-soft);overflow-wrap:break-word;word-break:break-word}
+.course-sub{color:var(--muted);font-style:italic;margin-bottom:16px}
+.muted{color:var(--muted);font-style:italic}
+
+/* ---------- Footer ---------- */
+.footer{padding:36px 0 60px;text-align:center;color:var(--muted);font-size:.86rem}
+.footer a{color:var(--muted);text-decoration:underline}
+.footer p{margin:4px 0}
+
+/* ---------- Responsive ---------- */
+@media (max-width:760px){
+  .hero-inner{flex-direction:column-reverse;text-align:center;gap:28px}
+  .hero-desc{margin:0 auto}
+  .hero-actions{justify-content:center}
+  .quicklink-grid{grid-template-columns:1fr}
+  .topnav{gap:16px;overflow-x:auto}
+  .hero h1{font-size:2.1rem}
+  .course-body{padding-left:22px}
+  .course summary{flex-direction:column;align-items:flex-start;gap:4px}
+  .course-term{margin-left:0}
+  .card{max-width:100%}
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">Michael J. Rosenfeld</a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Department of Sociology &middot; Stanford University</p>
+      <h1>Michael J. Rosenfeld</h1>
+      <p class="hero-role">Professor of Sociology</p>
+      <p class="hero-desc">Social demographer studying mating and dating, the Internet's effect on society, and the history of family law &mdash; with particular attention to same-sex couples and their children.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://web.stanford.edu/~mrosenfe/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn btn-ghost" href="#publications">Browse publications</a>
+        <a class="btn btn-ghost" href="#teaching">See courses</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://web.stanford.edu/~mrosenfe/MR%20in%20the%20Mission%202023.JPG" alt="Portrait of Michael J. Rosenfeld" width="280" height="422">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="card contact-card" id="contact">
+      <h2 class="card-eyebrow">Contact</h2>
+      <p class="contact-name">Michael J. Rosenfeld</p>
+      <p>Professor<br>Department of Sociology<br>Stanford University<br>(650) 723-3958</p>
+      <p><a href="mailto:mrosenfe@stanford.edu">mrosenfe@stanford.edu</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="research">
+  <div class="wrap">
+    <h2 class="section-title">Research Interests</h2>
+    <div class="prose legacy-content">
+      <table>
+<tr>
+<td>
+<p><b>Research Interests:</b><br/>
+     I am a social demographer who studies
+    mating and dating, and the Internet's effect on society. I study family
+    history and family law, especially as they relate to same-sex couples and
+    their children. I am the author of many articles, and the books<em>The Age of Independence: Interracial
+    Unions, Same-Sex Unions, and the Changing American Family</em>
+    (2007) and <em>The Rainbow after
+    the Storm: Marriage Equality and Social Change in the US</em>
+    (2021).</p>
+<p>I am currently working on:<br/>
+    * How Couples Meet and Stay Together, a longitudinal study of social life
+    in the US, funded by the National Science Foundation. The first wave of the
+    study was fielded in 2009. Public data, documentation, and further
+    information is available at the <a href="http://data.stanford.edu/hcmst" target="_blank">Stanford Library's data distribution website</a>. Links to
+    news coverage about the "How Couples Meet" study is below, under
+    prior media coverage. The How Couples Meet and Stay Together project has
+    revolutionized our understanding of such topics as how couples meet, the
+    role of technology and the role of family in personal relations, why
+    couples stay together, and whether same-sex married couples stay together
+    as long as heterosexual married couples do. </p>
+</td>
+</tr>
+</table>
+    </div>
+    <h3 class="subsection-title">Quick links</h3>
+    
+        <div class="quicklink-grid">
+          <a class="quicklink" href="#publications"><span class="ql-icon">&#128218;</span><span>My research, published papers &amp; working papers</span></a>
+          <a class="quicklink" href="https://web.stanford.edu/~mrosenfe/cv.pdf" target="_blank" rel="noopener"><span class="ql-icon">&#128196;</span><span>My CV</span></a>
+          <a class="quicklink" href="https://scholar.google.com/citations?user=cb1NvGUAAAAJ&hl=en" target="_blank" rel="noopener"><span class="ql-icon">&#127891;</span><span>Google Scholar profile</span></a>
+          <a class="quicklink" href="https://web.stanford.edu/~mrosenfe/Press_coverage.htm" target="_blank" rel="noopener"><span class="ql-icon">&#128240;</span><span>Press coverage of my research</span></a>
+          <a class="quicklink" href="http://data.stanford.edu/hcmst" target="_blank" rel="noopener"><span class="ql-icon">&#128279;</span><span>How Couples Meet &amp; Stay Together — project home page</span></a>
+          <a class="quicklink" href="#the_graph"><span class="ql-icon">&#128200;</span><span>The graph of how couples meet</span></a>
+          <a class="quicklink" href="https://web.stanford.edu/~mrosenfe/DeBoer_docs.htm" target="_blank" rel="noopener"><span class="ql-icon">&#9878;&#65039;</span><span>Materials from the DeBoer v. Snyder trial</span></a>
+          <a class="quicklink" href="https://web.stanford.edu/~mrosenfe/Marriage_Family_case_law.htm" target="_blank" rel="noopener"><span class="ql-icon">&#9878;&#65039;</span><span>Marriage &amp; family judicial decisions</span></a>
+        </div>
+  </div>
+</section>
+
+<section class="section" id="publications">
+  <div class="wrap">
+    <h2 class="section-title">Selected Scholarly Publications</h2>
+    <p class="section-lede">PDF format, unless otherwise noted.</p>
+    <div class="prose legacy-content pubs">
+      <table>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld. 2021. Oxford University
+    Press</b>. <strong><i>The Rainbow
+    After the Storm: Marriage Equality and Social Change in the US. </i></strong>Available
+    from <a href="https://www.amazon.com/Rainbow-after-Storm-Marriage-Equality/dp/0197600441" target="_blank">Amazon</a>, <a href="https://www.barnesandnoble.com/w/the-rainbow-after-the-storm-michael-j-rosenfeld/1139844961" target="_blank">bn</a>, and <a href="https://global.oup.com/academic/product/the-rainbow-after-the-storm-9780197600443" target="_blank">Oxford</a></p>
+<p>For most of American history, public
+    opinion was strongly opposed to gay rights. Marriage equality, when it
+    first emerged as an issue in the 1970s and 1980s, had remarkably little
+    public support. Even within the gay rights movement, many smart people
+    thought that marriage equality was unachievable in the US and therefore
+    they thought marriage equality was not worth fighting for. And yet, under
+    the surface, rapid change was taking place. American attitudes toward gay
+    rights were liberalizing at an unprecedented pace. It seemed that almost
+    overnight marriage equality was the law of the US, delivered by a 5-4
+    Supreme Court decision in <em>Obergefell
+    v. Hodges</em>. This book tells the story of the rapid
+    liberalization of attitudes toward gay rights that made same-sex marriage
+    the law of the US sooner than almost anyone thought was possible. See also
+    this <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_GSS_Mar_Equality_wording_change_addendum.pdf">addendum</a>
+    reassessing chapter 8 analyses of GSS data after the GSS discovered an
+    error in their question wording. Quick summary: the question wording change
+    doesn't matter very much.</p>
+<p><em>Rainbow
+    After the Storm</em>explains how and why public opinion toward gay
+    rights liberalized so much, while most other public attitudes have remained
+    relatively stable. The book explores the roles of a variety of actors in
+    this drama. Social science research helped to shift elite opinion in ways
+    that reduced the persecution of gays and lesbians. Gays and lesbians by the
+    hundreds of thousands responded to a less repressive environment by coming
+    out of the closet. Straight people started to know the gay and lesbian
+    people in their lives, and their view of gay rights shifted accordingly.
+    Same-sex couples embarked on years-long legal struggles to try to force
+    states to recognize their marriages. In courtrooms across the US social
+    scientists behind a new consensus about the normalcy of gay couples and the
+    health of their children won victories over fringe scholars promoting
+    discredited antigay views. In a few short years marriage equality which had
+    once seemed totally unrealistic became realistic. And then almost as soon
+    as it was realistic, marriage equality became a reality. What is there to
+    be learned from the victories of gay rights that can be applied to other
+    social movements?</p>
+<p>The educational materials development group Futurum
+    from the UK developed a <a href="https://futurumcareers.com/social-science-for-social-change">learning
+    module from this research</a>which they are making available to high
+    school students world-wide.</p>
+</td>
+<td>
+<p><img alt="Rainbow After the Storm" src="https://web.stanford.edu/~mrosenfe/Rosenfeld_Rainbow.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld. 2007. <i>THE AGE OF
+    INDEPENDENCE: Interracial Unions, Same-Sex Unions and the Changing American
+    Family</i>. Harvard University Press</b>. Available (in paperback) <a href="http://www.amazon.com/Age-Independence-Interracial-Same-Sex-Changing/dp/0674034902/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1282663018&amp;sr=1-1" target="_blank">now from Amazon.com</a>. </p>
+<p>The Age of Independence is a book which
+    offers a new theory of family trends and social change in the US. The
+    argument revolves around the independent life stage, a life stage which has
+    emerged since 1960. Young adults experience the independent life stage
+    after they have left their parents' homes, but before they have settled
+    down to start their own family. During the independent life stage young men
+    and women go away to college, travel, begin careers, and enjoy a period of
+    relative social independence.<br/>
+    The rise of the independent life stage has
+    reduced parental control over the dating and mate selection choices of
+    their children. The decline of parental supervision and control results in
+    a sharp rise in interracial and same-sex unions, the kind of unions that
+    previous generations of parents were able to prevent. </p>
+<p><u>Related Figures and Data:</u><br/>
+     * A <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_pct_interracial.pdf">figure</a>
+    and <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_pct_interracial.xls">worksheet</a>describing the
+    increasing percentage of American couples that are interracial, by several
+    definitions of interracial.<br/>
+     * A <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_rise_of_interracial_and_same_sex_figure.pdf">figure</a>and
+    <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_interracial_same_sex_worksheet.xls">worksheet</a>
+    describing the increasing number of interracial and same-sex couples in the
+    US.<br/>
+     * A <a href="https://web.stanford.edu/~mrosenfe/Attitudes_Interracial.pdf" target="_blank">figure</a>and <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Attitudes_Interracial_Marriage.xls" target="_blank">worksheet</a>
+    describing the decreasing support in the US for laws against interracial
+    marriage.<br/>
+     *<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_3_figures_phantom_boomerang.pdf" target="_blank">Figures
+    on the phantom boomerang</a>, describing the rise of independent living
+    which is the opposite of the boomerang theory that is so widely believed.
+    Now updated with new figures 4 and 5 showing the rise of solo living among
+    men and women of all ages (but especially senior women)</p>
+</td>
+<td>
+<p><img src="https://web.stanford.edu/~mrosenfe/book_cover_paperback.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Other Scholarly Publications:</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld and Alisa Feldman. 2026. <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Feldman_marriage_DP_JMF_2026.pdf">What Happened to the
+    Marriage Alternatives? Same-Sex Couples in the US and the Distinctiveness
+    of Marriage</a>, </b>forthcoming in the <i>Journal of Marriage and Family</i>.
+    We show that same-sex couples have had a strong preference for marriage
+    over domestic partnership, even when domestic partnership offers a similar
+    set of state-provided benefits (as has been the case in California).
+    Appendices are <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Feldman_marriage_DP_appendices.pdf">here</a>.
+    A full reproduction package is <a href="https://www.openicpsr.org/openicpsr/workspace?goToLevel=project&amp;goToPath=/openicpsr/241661">here</a>.
+    Link to online published version is <a href="https://doi.org/10.1111/jomf.70054">here</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld 2025. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Pandemic_dating_recession_2025.pdf">Singleness and the
+    Pandemic Dating Recession</a>," </b>in the <i>Journal of Family Issues</i>.
+    This paper shows how dramatically the COVID-19 pandemic hindered American
+    adults from forming romantic relationships. I estimate that more than 10
+    million American adults were made single by the pandemic. Appendices are <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_pandemic_dating_appendices.pdf">here</a>. A full
+    reproduction package is <a href="https://web.stanford.edu/~mrosenfe/Pandemic_dating_replication.zip">here</a>.
+    Link to the <a href="https://doi.org/10.1177/0192513X251322128">online
+    published</a>version.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld 2024. "<a href="https://sociologicalscience.com/download/vol_11/october/SocSci_v11_934to964.pdf">The
+    Surprising Decline of Workplace Sexual Harassment Incidence in the U.S.
+    Federal Workforce</a>." </b><i>Sociological Science</i>11: 934-964. This
+    paper describes a surprising and dramatic decline in reported workplace
+    sexual harassment in the federal workforce. A full replication package is <a href="https://doi.org/10.3886/E209051V1">here</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld and Katharina Roesler 2023. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Roesler_JMF_2023_stability_and_change_divorce.pdf">Stability
+    and Change in Predictors of Marital Dissolution in the US 1950-2017</a>," </b>the
+    first comprehensive study in two decades of predictors of marital
+    dissolution in the US and their change and stability over time. We find
+    some evidence of increasing inequality in divorce risk between advantaged
+    and disadvantaged groups. We also find some predictors of divorce are
+    surprisingly stable over time. Forthcoming in <i>Journal of Marriage and
+    Family</i>. The online <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Roesler_JMF2023_appendices.pdf">appendix</a>
+    is available, as is a big <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Roesler_2023_JMF_replication.zip" target="_blank">replication
+    package</a>with the couple-year event history dataset, Stata logs and do
+    files and some helpful (we hope) annotations. The early online <a href="https://doi.org/10.1111/jomf.12932">JMF published version</a>is
+    available (albeit behind a firewall).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld
+    and Sonia Hausen 2023. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Hausen_Resilience_Stress_Soc_Sci_2023.pdf">Resilience and
+    Stress in Romantic Relationships in the US during the COVID-19 Pandemic</a>,"
+    </b>is a study of how American couples took the extra time together that
+    the pandemic gave them, and forged the extra time into greater solidarity
+    and relationships strength. The paper is published in <i><a href="https://sociologicalscience.com/articles-v10-17-472/">Sociological Science: 10: 472-500</a></i>. Appendices are <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_and_Hausen_2023_online_supplement.pdf">here</a>, and a
+    replication package is <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Hausen_2023_replication.zip">here</a>,
+    find the data at <a href="https://data.stanford.edu/hcmst2017">https://data.stanford.edu/hcmst2017</a>.
+    </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld, Reuben J. Thomas, and Sonia Hausen
+    2019. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_et_al_Disintermediating_Friends.pdf" target="_blank">Disintermediating Your friends: How online dating in the
+    United States displaces other ways of meeting</a>,"</b>a study of the
+    way the Internet is diplacing friends as a way for heterosexual couples to
+    meet, with <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_et_al_disintermediating_appendices.pdf" target="_blank">appendices</a>. Now published in the <em>Proceedings of the National Academy of
+    Sciences</em>, find it online <a href="https://doi.org/10.1073/pnas.1908630116" target="_blank">here</a>. One
+    often reproduced graph from this paper, updated with data from 2020 and
+    2022 waves, is here: </p>
+<p><img id="the_graph" alt="How couples met" src="https://web.stanford.edu/~mrosenfe/Rosenfeld_how_hetero_couples_met_through2021v4.JPG"/></p>
+<p>Source: HCMST surveys of 2009, 2017, 2020, and 2022. Number of
+    different-sex couples who reported how they met in each wave: 2,464 in
+    2009; 2,957 in 2017; 117 in 2020; 74 in 2022. More than one category can
+    apply so percentages don't add to 100%. There are some other less common
+    ways of meeting that were coded but are not represented in this figure
+    (including meeting in or through the military, on a blind date, met in
+    public, met while on vacation, met through a non-Internet singles service,
+    met on a business trip, etc). The HCMST surveys are hosted at <a href="https://data.stanford.edu/hcmst">https://data.stanford.edu/hcmst</a>.
+    Funding generously provided by the National Science Foundation (grants SES
+    2030593 and SES 1153867) and the UPS Endowment at Stanford University. <a href="https://doi.org/10.3886/E237024V1">Reproduction package</a>for this
+    paper is available from OpenICPSR.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld, and Katharina Roesler,
+    2019. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_and_Roesler_Cohabitation_Experience_NSFG.pdf" target="_blank">Cohabitation Experience and Cohabitation's Association with
+    Marital Dissolution</a>, </b>(including appendices)<b>"</b>in <em>Journal of Marriage and Family </em>81
+    (1): 42-58<em>, </em>prepublication
+    online version<a href="https://rdcu.be/9GMB" target="_blank">here</a>. The
+    final published version is <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jomf.12530" target="_blank">here</a>. We show that premarital cohabitation consistently
+    predicts higher rates of divorce in the US over time, consistent with one
+    of the classic and most surprising findings of American Sociology in the
+    1970s and 1980s. Because couples who cohabit before marriage are <em>less</em>likely to divorce in
+    the first year of marriage, due to what we call the Practical Experience of
+    Cohabitation (i.e. the couples who have lived together before have a
+    practical advantage in the first year of marriage), it always will seem as
+    if the historic association between premarital cohabitation and divorce has
+    disappeared in the most recent marriage cohort, but this is illusory. If
+    the marriage cohort is followed for more than a few years, the same
+    association between premarital cohabitation and higher divorce rates
+    reappears. Interestingly, a lot of sociologists who study marriage and
+    cohabitation are committed to the erroneous idea that premarital
+    cohabitation's association with higher divorce rates has disappeared.
+    Arielle Kuperberg blogged with an interesting critique of our paper <a href="https://thesocietypages.org/ccf/2018/10/16/cohabitation-and-divorce-the-importance-of-accounting-for-age-at-coresidence/" target="_blank">here</a>, and our response can be found <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Roesler_response_Kuperberg.htm">here</a>and <a href="https://thesocietypages.org/ccf/2018/11/27/response-to-arielle-kuperberg-cohabitation-and-divorce-the-importance-of-accounting-for-age-at-coresidence/" target="_blank">here</a>. A replication package (including event history
+    data in Stata format and Stata log) for Tables 1,2, and 3 is <a href="https://web.stanford.edu/~mrosenfe/data_share/Rosenfeld_Roesler_2018_NSFG.zip">here</a>.</p>
+<p>*There was a really
+    revealing <a href="https://doi.org/10.1111/jomf.12724" target="_blank">comment</a>
+    published in JMF by Manning, Smock and Kuperberg (MSK) disputing our
+    results, and claiming that premarital cohabitation no longer is associated
+    with higher rates of divorce. Our reply to MSK is <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Roesler_replytoMSK_appendices.pdf">here</a>, or find the
+    published JMF version of our reply <a href="https://doi.org/10.1111/jomf.12744" target="_blank">here</a>. The
+    replication package for our 2020 reply is <a href="https://web.stanford.edu/~mrosenfe/data_share/RR_2020_NSFG_replication_package_v2.zip" target="_blank">here</a>.
+    MSK discarded more than 75% of the data, and used the reduced sample size
+    and the resulting underpowered test to claim that there was no benefit to
+    marital stability in the first year of marriage. MSK treated children in
+    the household as time-invariant, even though couples marry in part to have
+    and raise children. Having children at the time of marriage is a strong
+    proxy for premarital cohabitation, and MSK's analysis and much of their
+    prior work is marred by this biasing and unnecessary data shortcut. MSK's
+    comment features a number of other interesting errors.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2018.</b>"<strong><a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Tinder_and%20Dating_apps.pdf" target="_blank">Are Tinder
+    and Dating Apps Changing Dating and Mating in the U.S?</a></strong>."
+    This paper uses new HCMST 2017 data on how people use the phone apps. The
+    paper was presented at the Penn State "Families and Technology"
+    conference, and is published in an edited volume Families and Technology,
+    edited by Jennifer Van Hook, Susan M. McHale, and Valarie King. Published
+    by Springer, Switzerland.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Orth, Taylor, and M. J. Rosenfeld, 2018 "<a href="https://muse.jhu.edu/article/682834" target="_blank">Commitment
+    Timing in Same-Sex and Different-Sex Relationships</a>," </b><em><b>Population Review </b></em><b>57 (1): 1-19.</b>See also pre-publication
+    version <a href="https://web.stanford.edu/~mrosenfe/Orth_and_Rosenfeld_Relationship_timing_Pop_Review.pdf" target="_blank">here</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld, 2018. </b>"<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Who_wants_the_Breakup.pdf"><strong>Who Wants the Breakup? Gender and
+    Breakup in Heterosexual Couples</strong></a>" P. 221-243 in the
+    book <em>Social Networks and the
+    Life Course</em>, Edited by Duane Alwin, Diane Felmlee, and Derek
+    Kreager. Springer Press, Switzerland. This paper is often cited in the
+    popular press about predominance of women wanting
+    divorces (I found that about 2/3 of all divorces were wanted by the wife,
+    which is consistent with prior research from other sources). Somewhere
+    along the way, an erroneous claim started getting repeated in popular
+    commentary: that 90% of divorces among college educated people were wanted
+    by the wife. This 90% college women's divorce preference is definitely Not
+    in the data, not in the paper, and is in my view too high to be feasible.
+    So if you see that erroneous claim, know that it is wrong and alert me:
+    some folks have been good enough to fix and correct this error when they
+    were alerted to it.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld,
+    2017."<a href="https://www.sociologicalscience.com/articles-v4-20-490/" target="_blank">Marriage, Choice, and Couplehood in the Age of the Internet</a>."</b><strong>Sociological
+    Science</strong>
+    4: 490-510. Video of my 2015 ASA plenary presentation on a similar subject
+    is <a href="http://videoarchive.asanet.org/presentation/?fw__param=plenary_session_internet_dating" target="_blank">here</a>. An online supplement with appendices and my
+    re-analysis of some results from a paper by Paul is <a href="https://www.sociologicalscience.com/download/vol-4/september/supplemental_materials/SocSci_v4_490to510_supp.pdf" target="_blank">here</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J. Rosenfeld, 2017. "<a href="http://journals.sagepub.com/doi/full/10.1177/2378023117727658" target="_blank">Moving a Mountain: The Extraordinary Trajectory of Same-Sex
+    Marriage Approval in the U.S</a>" Socius 3:1-22. </b>Link to pre-published
+    version <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Moving_a_Mountain_Socius_Forthcoming.pdf" target="_blank">here</a>. My paper presents tables and figures based on
+    summary analyses of all attitude variables in the GSS (through 2016) and in
+    the ANES (through 2012) that were repeated at least 3 times across at least
+    10 years. The relevant summary datasets are here (in Stata Format;
+    right-click to download):<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_GSS_summary_data_sharing.dta">
+    GSS</a>and <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_ANES_summary_data_sharing.dta">ANES</a>. See
+    also this <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_GSS_Mar_Equality_wording_change_addendum.pdf">addendum</a>,
+    which reassesses marriage equality change (and finds only minor
+    differences) after the GSS discovered inadvertent changes in the way the
+    "marhomo" variable was asked.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2015. "<a href="https://www.sociologicalscience.com/articles-v2-23-478/" target="_blank">Revisiting the Data from the New Family Structure Study:
+    Taking Family Instability Into Account</a>." Sociological Science</b>
+    2: 478-501, includes supplemental tables. Since Sociological Science is an
+    open access journal, no credentials or permissions are required to follow
+    the link above. A small Stata dataset of the extra variables I created for
+    this paper is <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld%20created%20vars%20from%20NFSS%20for%20sharing.dta">here</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2014. "Couple Longevity in the era of Same-Sex Marriage
+    in the US," Journal of Marriage and Family 76(5): 905-918. </b>Link to
+    the journal website <b><a href="http://onlinelibrary.wiley.com/doi/10.1111/jomf.12141/abstract" target="_blank">here</a>. </b><a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_JMF_2014_supplementary_tables.pdf" target="_blank">Supplementary
+    tables</a>are also available. A pre typeset version of the paper is <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Couple_Longevity_Forthcoming_JMF.pdf" target="_blank">here</a>
+    for users who don't have access to the journal behind the firewall.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2012. <strong>"Unhitched:
+    Love, Marriage, and Family Values from West Hollywood to Western China by
+    Judith Stacey"</strong></b>a review essay published online in
+    Social Forces, find it <a href="http://sf.oxfordjournals.org/cgi/content/full/sos104?ijkey=haw3iLuYr7evzls&amp;keytype=ref" target="_blank">here</a>. doi: 10.1093/sf/sos104</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld and Reuben J. Thomas<strong>.</strong></b>
+    2012 <strong><i>American
+    Sociological Review</i></strong><strong>77(4</strong><em><b>)</b></em><strong>: 523-547</strong>. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_How_Couples_Meet_Working_Paper.pdf" target="_blank">Searching
+    for a Mate: The Rise of the Internet as a Social Intermediary</a>."
+    The official online version of the paper can be found at the <a href="http://asr.sagepub.com/content/77/4/523" target="_blank">ASR/ Sage
+    publication website</a>. This paper has been among the most read papers on
+    the ASR website since its publication. Supplementary tables are available<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Thomas_Searching_for_mate_supplementary_tables.pdf" target="_blank">here</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2010. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_live_Indep_MFT_magazine.pdf" target="_blank">The Independence of Young Adults in Historical Perspective</a>."
+    </b>in Family Therapy Magazine, May/June 2010, Vol 9, Num 3, P. 17-19.
+    Links to a typeset version of the article coming soon.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M. J.
+    Rosenfeld, 2010. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Nontraditional_Families_Demography.pdf" target="_blank">Nontraditional
+    Families and Childhood Progress Through School</a>" in <i>Demography</i>,
+    Volume 47 (3): 755-775</b>(Copyright 2010 Population Association of
+    America, reprinted here with permission). See also the <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Demography_children_suppl.pdf" target="_blank">supplementary
+    table</a>(summarizing prior small-sample studies of children raised by
+    same-sex couples) which is supposed to be available on Demography's website
+    as well..<br/>
+     * Because this paper was at the time of its
+    publication, the only paper in the literature which compared children
+    raised by same-sex couples to children raised by other types of families,
+    using large sample nationally representative data, this paper's results
+    were discussed in depth during the hearing phase of Perry v.
+    Schwarzenegger, Federal district court 2010 (the case which puts the
+    constitutionality of the anti-gay-marriage Proposition 8 on trial). See <a href="http://www.equalrightsfoundation.org/legal-filings/hearing-transcripts/perry-trial-day-5-transcript/" target="_blank">link to transcript of day 5 of the trial here</a>. The <a href="https://web.stanford.edu/~mrosenfe/Perry_v_Schwarzenegger_US_2010.pdf" target="_blank">judge ultimately
+    struck down Proposition 8</a>, and after appeals, the Federal district
+    court opinion was upheld by the Supreme Court, and same-sex marriage became
+    legal in California once again.<br/>
+     * My paper on children raised by
+    nontraditional families was subject to a <a href="http://link.springer.com/article/10.1007/s13524-012-0169-x" target="_blank">comment</a>in Demography (June, 2013) by Allen et al. My
+    response (also in Demography, June, 2013) "Reply to Allen et al,"
+    Demography 50 (3) 963-969, is linked <a href="http://link.springer.com/article/10.1007/s13524-012-0170-4" target="_blank">here</a>, or <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Demography_reply_to_Allen_etal.pdf" target="_blank">here</a>.
+    <br/>
+     * The debate over how to interpret the 2000
+    census data with regards to progress of children raised by same-sex couples
+    was renewed in the DeBoer v. Snyder Michigan (2014) same-sex marriage
+    trial, where I appeared as a witness for the plaintiffs, and Allen and
+    Price appeared as witnesses for the state defendants. Judge Friedman's
+    Michigan decision is <a href="https://web.stanford.edu/~mrosenfe/DeBoer_v_Snyder_US_Michigan_2014.pdf" target="_blank">here</a>. The Michign decision largely settled the issue of
+    social science, children, and same-sex marriage for the courts. The DeBoer
+    v. Snyder decision was <a href="https://web.stanford.edu/~mrosenfe/sixth_curcuit_appeal_decision_DeBoer_2014.pdf" target="_blank">overturned</a>
+    on constitutional grounds by the 6th Circuit. The Supreme Court's 2015 <a href="https://web.stanford.edu/~mrosenfe/Obergefell_v_Hodges_US_SupremeCt_2015.pdf" target="_blank">Obergefell
+    decision</a>reversed the 6th circuit and affirmed the DeBoer trial
+    decision, making same-sex marriage legal in all 50 states. More background
+    documents from the DeBoer trial, including all expert affidavits, are <a href="https://web.stanford.edu/~mrosenfe/DeBoer_docs.htm" target="_blank">here</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2010. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_response_to_critics.pdf">Still
+    Weak Support for Status-Caste Exchange: A Reply to Critics</a>" <i>American
+    Journal of Sociology</i>Vol 115 Number 4, Pages 1264-1276. </b>This paper
+    is response to articles by Gullickson and Fu, and by Kallmijn, in the same
+    issue of the <a href="http://www.journals.uchicago.edu/toc/ajs/current?cookieSet=1" target="_blank">AJS</a>. The debate centers around my 2005 AJS piece on
+    status-caste exchange, linked below.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2008. </b><a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Endogamy_Comparative_Perspective.pdf">"<b>Racial,
+    Educational, and Religious Endogamy in Comparative Historical Perspective</b>"</a>,
+    <i>Social Forces</i>volume 87, issue 1, pages 1-32 (lead article). Links
+    to typeset version (electronic access necessary) at <a href="http://www.jstor.org/stable/20430848" target="_blank">JSTOR</a>. See
+    also a <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_SF_2007_Appendices.pdf" target="_blank">technical
+    appendix</a>with additional analyses and tables and figures showing that
+    the trend in educational endogamy in the US is relatively flat over time,
+    and that different measures of educational endogamy yield divergent answers
+    as to whether educational endogamy is slightly increasing or slightly
+    decreasing over time in the US. The divergent trend directions depending on
+    the specification of the measure of educational endogamy is a sign that the
+    popular theory that holds that educational endogamy is increasing in the US
+    rests on a shaky empirical foundation.<br/>
+     * In the front matter of the journal, p.ii,
+    Editor Francois Nielsen wrote the following: "Occasionally I run
+    across papers that not only present original results but also have the
+    scope, theoretical depth and integrative quality to function as an
+    effective review of an entire subfield. A good example is the article by
+    Michael Rosenfeld in this issue." </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld. 2008. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_Intermarriage_Sage_Encyclopedia.pdf" target="_blank">Intermarriage</a>."
+    In the <i>Encyclopedia of Race, Ethnicity and Society</i>, Edited by
+    Richard T. Schaefer, pages 736-739. Sage Press</b>. Copyright 2008 Sage
+    Press, reprinted here with permission.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld. 2006. "<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_young_adulthood_PDR.pdf" target="_blank">Young Adulthood as a Factor in Social Change in the United
+    States</a>." <i>Population and Development Review</i>32(1) 27-51</b>.
+    (Copyright 2006, Population Research Council, Reprinted with Permission).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld and Byung-Soo Kim. 2005 "<a href="http://www.jstor.org/stable/4145376" target="_blank">The Independence
+    of Young Adults and the Rise of Interracial and Same Sex Unions</a>"
+    was the lead article in the <i>American Sociological Review</i>70
+    (4):541-562</b>. The paper is also available through this external link to <a href="http://www.ingentaconnect.com/content/asoca/asr/2005/00000070/00000004/art00001" target="_blank">Ingenta.</a>Also available are <a href="https://web.stanford.edu/~mrosenfe/Rosenfeld+Kim_online_appendix.pdf">supplementary tables</a>for the
+    paper, describing the the method for making 1990 and 2000 census samples of
+    same sex couples more consistent, as well as providing expanded tables of
+    coefficients for some logistic regression models summarized in Table 7 of
+    the paper. Email me if you want a copy of this paper. This paper was
+    summarized and described as 'new and noteworthy research' in the <a href="http://caliber.ucpress.net/toc/ctx/5/4" target="_blank">Fall, 2006
+    edition of the sociology journal <i>Contexts</i></a>, p. 11.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld. 2005. "<a href="https://web.stanford.edu/~mrosenfe/Critique%20of%20Exchange%20Theory%20AJS.pdf">A Critique of Exchange
+    Theory in Mate Selection.</a>" <i>American Journal of Sociology</i>
+    110 (5) 1284-1325</b>(Copyright 2005, University of Chicago Press,
+    reprinted with permission). Additional tables, figures and addenda for the
+    paper are available as a separate appendix <a href="https://web.stanford.edu/~mrosenfe/additional%20appendices%20for%20Critique%20of%20Exchange%20Theory.pdf">here</a>.
+    The <a href="https://web.stanford.edu/~mrosenfe/archive%20of%20%20loglin%20data%20for%20distribution.xls">dataset</a>
+    used in tables 3-5 of the paper is posted here as an excel file. This paper
+    was the winner of the <i>2006 Roger V. Gould memorial prize</i>for the
+    best paper in the AJS in the previous year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2002. <a href="https://web.stanford.edu/~mrosenfe/marital%20assimilation.pdf">Measures of
+    Assimilation in the Marriage Market: Mexican Americans 1970-1990</a><i>Journal
+    of Marriage and the Family</i>64: 152-162</b>(copyright 2002 by the
+    National Council on Family Relations, 3989 Central Ave. NE, Suite 550,
+    Minneapolis MN 55421. Reprinted with permission)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2001. <a href="https://web.stanford.edu/~mrosenfe/marital_panethnicity.pdf">The Salience of Pan-
+    National Hispanic and Asian Identities in US Marriage Markets </a><i>Demography</i>
+    38: 161-175</b>. (Copyright 2001 Population Association of America,
+    Reprinted with permission)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, and M. Tienda, 1999. "Mexican Immigration, Occupational
+    Niches and Labor Market Competition: Evidence from Los Angeles, Chicago and
+    Atlanta, 1970-1990" Chapter 2 in <i>Immigration and Opportunity: Race,
+    Ethnicity and Employment in the United States</i>Edited by Frank D. Bean
+    and Stephanie Bell-Rose. New York: Russell Sage</b>. There are two ways to
+    get this chapter: you can buy the book from Russell Sage (search their
+    website for publications <a href="http://www.russellsage.org/publications/" target="_blank">here</a>) or you can Email me and I'll send you a PDF file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 1997. <a href="https://web.stanford.edu/~mrosenfe/Bulls%20Riot.pdf">Celebration, Politics,
+    Selective Looting and Riots: A Micro Level Study of the Bulls Riot of 1992
+    in Chicago</a>. <i>Social Problems</i>44 (4): 483-502</b>. (Copyright 1997
+    Society for the Study of Social Problems. Reprinted with permission)</p>
+</td>
+</tr>
+</table>
+    </div>
+    <h3 class="subsection-title">Working Papers</h3>
+    <div class="prose legacy-content">
+      <table>
+<tr>
+<td>
+<p><b>M.
+    J. Rosenfeld, 2007.</b>"<a href="https://web.stanford.edu/~mrosenfe/Rosenfeld_age_at_marriage.pdf"><strong>Age at Marriage and Interracial
+    Marriage</strong></a>."</p>
+</td>
+</tr>
+</table>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="teaching">
+  <div class="wrap">
+    <h2 class="section-title">Classes I Teach</h2>
+    <p class="section-lede">Click a course to expand syllabi, readings, and materials.</p>
+    <nav class="class-nav" aria-label="Jump to course">
+      <a href="#Soc_9N">Soc 9N</a>
+<a href="#Soc_26N">Soc 26N</a>
+<a href="#Soc_46N">Soc 46N</a>
+<a href="#Soc_149">Soc 149 / 249 / Urban Studies 112</a>
+<a href="#Soc_155">Soc 155 / 255</a>
+<a href="#Soc_180B">Soc 180B / 280B</a>
+<a href="#Soc202">Soc 202</a>
+<a href="#Soc_204A">Soc 204A</a>
+<a href="#Soc_323">Soc 323</a>
+<a href="#Soc_381">Soc 381</a>
+<a href="#Soc_382">Soc 382</a>
+<a href="#Soc_388">Soc 388</a>
+<a href="#Soc385AB">Soc 385A + B</a>
+<a href="#Soc_180_280_legacy">Soc 180 / 280</a>
+    </nav>
+    <div class="courses">
+      
+      <details class="course" id="Soc_9N">
+        <summary>
+          <span class="course-code">Soc 9N</span>
+          <span class="course-title">The 2024 US Election: Understanding the National, Participating in the Local</span>
+          <span class="course-term">Fall 2024</span>
+        </summary>
+        <div class="course-body">
+          <p class="course-sub">Freshman seminar</p>
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc9N_syllabus.htm">Syllabus</a></p>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc9N_community_guidelines.htm">Class community guidelines</a></p>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc9N_presentations.htm">Instructions for presenters</a></p>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc9N_reading_questions.htm">Questions for each reading</a></p>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc_9N_paper_instructions.htm" target="_blank">Instructions for
+    short papers</a></p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_26N">
+        <summary>
+          <span class="course-code">Soc 26N</span>
+          <span class="course-title">The Changing American Family</span>
+          <span class="course-term">Fall 2006</span>
+        </summary>
+        <div class="course-body">
+          <p class="course-sub">Freshman seminar</p>
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc26N_syllabus.htm">Syllabus</a></p>
+<p>Articles on the reading list (external links accessible to Stanford
+    users only)<br/>
+    Shammas, <a href="http://links.jstor.org/sici?sici=0043-5597%28199501%293%3A52%3A1%3C104%3AAHGICP%3E2.0.CO%3B2-S" target="_blank">"Anglo American Household Government in Comparative
+    Perspective"</a>(I recommend that you download and print) <br/>
+    Arnett and Taber, <a href="http://www.springerlink.com/content/lr04485543n2/?p=99184ed0470247f397630493ff4756ec&amp;pi=72" target="_blank">"Adolescence Terminable and Interminable" </a>(read
+    in HTML or click on the PDF version, then print)<br/>
+    Rosenfeld and Kim, "<a href="http://www.ingentaconnect.com/content/asoca/asr/2005/00000070/00000004/art00001" target="_blank">The Independence of Young Adults and the Rise of
+    Interracial and Same-Sex Union</a>s"<br/>
+    Rosenfeld, "<a href="http://www.blackwell-synergy.com/toc/padr/32/1" target="_blank">Young Adulthood as a Factor in Social Change in the US</a>"
+    </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc26N_reading_questions.htm">Questions</a>for
+    each reading</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/freshman%20seminar%20presentation%20how%20to.htm">Guide</a>on how to
+    present.</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_46N">
+        <summary>
+          <span class="course-code">Soc 46N</span>
+          <span class="course-title">Race and Ethnic Identities</span>
+          <span class="course-term">Spring 2026</span>
+        </summary>
+        <div class="course-body">
+          <p class="course-sub">Freshman seminar</p>
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc46N.syllabus.htm">Syllabus</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc46N.reading_questions.htm">Questions</a>for each reading </p>
+<p>Presentation dates: <br/>
+    Rowyn: May 14<br/>
+    Luci: May 19<br/>
+    Armaan: May 21</p>
+<p>A couple of readings that are no longer on the syllabus but which are
+    interesting none the less:<br/>
+    Kinder and Sears, 1981: "<a href="http://psycnet.apa.org/journals/psp/40/3/" target="_blank">Prejudice
+    and Politics</a>"<br/>
+    Bobo, 1983: "<a href="http://psycnet.apa.org/journals/psp/45/6/" target="_blank">Whites' Opposition to Busing</a>"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/freshman%20seminar%20presentation%20how%20to.htm">Guide</a>on
+    how to present</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_149">
+        <summary>
+          <span class="course-code">Soc 149 / 249 / Urban Studies 112</span>
+          <span class="course-title">The Urban Underclass</span>
+          <span class="course-term">Winter 2025</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Urban_Underclass_syllabus.htm">Syllabus</a></p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/urb_community_guidelines.htm" target="_blank">Community
+    guidelines</a></p>
+<p>Soc 249 in-class presenters:<br/>
+    * Feb 6, Katie Mannion<br/>
+    * Feb 11, Mariana Dominguez<br/>
+    * Feb 27, Amanpreet Singh<br/>
+    * March 4, Juan Camara</p>
+<p><a href="https://web.stanford.edu/~mrosenfe/urb_reading_questions.htm">Questions for the Assigned Readings</a></p>
+<p>New: <a href="https://web.stanford.edu/~mrosenfe/Urb_soc_explorer_paper_instructions.htm" target="_blank">Instructions
+    for the Social Explorer Draft and Paper</a>. See Also Charlotte Reed's <a href="https://web.stanford.edu/~mrosenfe/Urb_Reed_Social_Explorer_geocoding.pdf" target="_blank">instructions</a>
+    for adding geocoded addresses to your Social Explorer maps, and Shania
+    Santana's more recent <a href="https://web.stanford.edu/~mrosenfe/Urb_Soc_Explorer_geography_Santana.pdf" target="_blank">notes</a>on using the Social Explorer's own facilities for
+    marking places on your map.</p>
+<p>What is expected of in-class and in-section <a href="https://web.stanford.edu/~mrosenfe/urb_presenters_howto.htm">presenters</a>.<br/>
+<br/>
+    Study guides for the exams, based on last year's exams:<br/>
+    Sample <a href="https://web.stanford.edu/~mrosenfe/urb_midterm_sample.htm">midterm</a>questions (updated)<br/>
+<a href="https://web.stanford.edu/~mrosenfe/Urb_2024_midterm_histogram.jpg">Midterm grade histogram 2024</a>
+    (new) <br/>
+<br/>
+    Sample <a href="https://web.stanford.edu/~mrosenfe/urb_final_sample.htm">final exam</a>questions (Now updated
+    for 2025) </p>
+<p><strong>Materials and slides I
+    will use in class:</strong><br/>
+<a href="https://web.stanford.edu/~mrosenfe/Urban_basic_issues.htm">Introduction</a>to some of the basic
+    ideas in the class. A figure on <a href="https://web.stanford.edu/~mrosenfe/urb_segregation_transition.pdf">transitional
+    neighborhoods</a>and neighborhood turnover, based on the game theory
+    analysis of American economist Thomas Schelling. Timelines:<a href="https://web.stanford.edu/~mrosenfe/chicago_time_line.htm">Chicago</a>time line, and <a href="https://web.stanford.edu/~mrosenfe/brief%20Civil%20Rights%20Time%20Line.htm">Civil Rights</a>time line.
+    Notes on <a href="https://web.stanford.edu/~mrosenfe/urb_notes_marxp+c.htm">Marxist</a>views of history. <a href="https://web.stanford.edu/~mrosenfe/urb_culture_of_poverty.htm">Outline</a>of the Culture of Poverty
+    ideas. My <a href="https://web.stanford.edu/~mrosenfe/urb_notes_neighborhood_effects.htm">notes</a>on
+    neighborhood effects, and an illustrative <a href="https://web.stanford.edu/~mrosenfe/urb_segr_simulation.pdf">simulation</a>
+    (in pdf format; an excel version that is easier to play with is <a href="https://web.stanford.edu/~mrosenfe/urb_segregation_simulation,%20revised.xls">here</a>) of what the
+    segregation indices mean. My <a href="https://web.stanford.edu/~mrosenfe/urb_notes_causes_segregation.htm">notes</a>
+    on different causes of segregation are here. Further notes on the <a href="https://web.stanford.edu/~mrosenfe/urb_notes_effects_segregation.htm">effects</a>of segregation. My
+    notes on free market economics and mortgage lending are<a href="https://web.stanford.edu/~mrosenfe/urb_notes_freemarket.htm">here</a>. A pdf figure which describes <a href="https://web.stanford.edu/~mrosenfe/Gerrymandering.pdf">gerrymandering</a>and reverse gerrymandering
+    (and a powerpoint version of the same <a href="https://web.stanford.edu/~mrosenfe/urb_gerrymandering%20figure.ppt">gerrymandering slides</a>). Two
+    excellent maps of Chicago, prepared by Victor Thompson, are now available.
+    There is the <a href="https://web.stanford.edu/~mrosenfe/Cgo_neighborhoods.pdf">neighborhood map</a>
+    (especially useful as a companion to Hirsch's book), and the map of <a href="https://web.stanford.edu/~mrosenfe/cgo_figure_pct_black.pdf">Black residential concentration</a>.
+    Several <a href="https://web.stanford.edu/~mrosenfe/newer_black_white_income_stats.pdf">graphs of black-white
+    income differences</a>are here. Some California HOLC redlining maps from
+    the 1930s are <a href="https://joshbegley.com/redlining/" target="_blank">here</a>,
+    and the broader source of HOLC maps is the <a href="https://dsl.richmond.edu/panorama/redlining/#loc=10/41.9498/-87.7169&amp;opacity=0.54&amp;city=chicago-il" target="_blank">Mapping Inequality</a>project.</p>
+<p>A local<a href="https://techcrunch.com/2015/01/10/east-of-palo-altos-eden/" target="_blank">history of East Palo Alto</a>that applies many class
+    themes.</p>
+<p><strong>Links related to segregation
+    and isolation in housing and in schools, with data after 1980:</strong><br/>
+    A report by Glaeser and Vigdor of the Manhattan Institute on the <a href="https://media4.manhattan-institute.org/pdf/cr_66.pdf" target="_blank">decline
+    of racial segregation in the US from 1970 to 2010</a>. There is a Census <a href="https://web.stanford.edu/~mrosenfe/census_segregation_80_2000.pdf">Bureau report by Iceland</a>et al on
+    segregation and isolation by metro area and by racial group, 1980-2000. See
+    also this <a href="http://projects.propublica.org/segregation-now/" target="_blank">ProPublica report</a>on rising school segregation (or more
+    correctly, isolation) in the US. A really interesting <a href="http://datatools.urban.org/Features/mortgages-by-race/" target="_blank">Urban Institute</a>map of mortgage origination by recent
+    Sociology BA graduate Taz George. A Census Bureau report, <a href="http://www.census.gov/prod/2002pubs/censr-3.pdf" target="_blank">"Racial
+    and Ethnic Residential Segregation in the United States: 1980-2000"</a>.
+    <a href="http://mumford.albany.edu/census/report.html" target="_blank">The
+    Lewis Mumford Center</a>, with various reports on segregation. <a href="http://www.civilrightsproject.harvard.edu/" target="_blank">The Civil
+    Rights Center</a>at Harvard University. Stanford's CCSRE has various<a href="http://ccsre.stanford.edu/PUBL_demRep.htm" target="_blank">reports</a>
+    on local diversity and segregation</p>
+<p><strong>On Hope 6, modern
+    gentrification, vouchers and Moving To Opportunity</strong>:<br/>
+    A <a href="http://www.brookings.edu/research/reports/2005/09/metropolitanpolicy-piper" target="_blank">Brookings Report</a>by Turbov and Piper. An <a href="http://www.urban.org/UploadedPDF/411002_HOPEVI.pdf" target="_blank">Urban
+    Institute/Brookings report</a>by Popkin et al. A <a href="http://www.nhi.org/online/issues/138/chicago.html" target="_blank">Critique</a>
+    by Venkatesh and Celimli. An Urban Institute <a href="http://www.urban.org/UploadedPDF/311059_Roof_3.pdf" target="_blank">brief
+    report </a>by Buron. An Urban Institute <a href="http://www.urban.org/UploadedPDF/411074_Roof_6.pdf" target="_blank">brief
+    report </a>by Popkin, Eiseman, and Cove. More recent <a href="http://www.urban.org/housing/Transforming-Public-Housing-in-Chicago.cfm" target="_blank">links to Urban Institute studies based on a longitudinal
+    cohort</a>of Chicago residents uprooted from the old high rise housing
+    projects by Hope VI. An Urban Institute <a href="http://www.urban.org/UploadedPDF/412523-public-housing-transformation.pdf" target="_blank">report by Popkin et al</a>on relocation from housing
+    projects and crime. One NBER link to a 2006 <a href="http://www.nber.org/papers/w11909.pdf" target="_blank">report on the
+    Moving to Opportunity housing voucher experiment (by Sanbonmatsu et al)</a>.</p>
+<p><strong>Links related to
+    incarceration, police- community relations, and minority communities in the
+    US:</strong><br/>
+    * A Washington Post story on<a href="http://www.washingtonpost.com/news/the-watch/wp/2014/09/03/how-st-louis-county-missouri-profits-from-poverty/" target="_blank">How St. Louis Profits from Poverty </a><br/>
+    * A Pettit and Western paper on <a href="http://www.jstor.org/stable/3593082" target="_blank">Mass
+    Imprisonment and the Life Course</a><br/>
+    * A USA Today story on <a href="http://www.usatoday.com/story/news/nation/2014/08/14/police-killings-data/14060357/" target="_blank">civilians killed by the police in the US</a>.<br/>
+    * US<a href="https://www.cdc.gov/nchs/data/nvsr/nvsr61/nvsr61_04.pdf" target="_blank">mortality statistics</a>for all causes of death in 2010.<br/>
+    * a <a href="https://www.pewresearch.org/short-reads/2024/04/24/what-the-data-says-about-crime-in-the-us/">Pew
+    report</a>on crime and attitudes about crime<br/>
+    * a <a href="https://www.sentencingproject.org/reports/mass-incarceration-trends/">Sentencing
+    Project</a>report on mass incarceration<br/>
+    * An <a href="http://www.nytimes.com/roomfordebate/2015/10/29/will-crime-rise-if-more-people-are-kept-out-of-prison?action=click&amp;pgtype=Homepage&amp;module=opinion-c-col-right-region&amp;region=opinion-c-col-right-region&amp;WT.nav=opinion-c-col-right-region" target="_blank">NYT debate</a>about whether diversion from prison will
+    lead crime to rise.<br/>
+    * The US <a href="https://web.stanford.edu/~mrosenfe/USDOJ_Ferguson_report.pdf" target="_blank">Dept. of
+    Justice report on Ferguson</a>, MO, from 2015. See also student Jimmy
+    Vang's Social Explorer <a href="https://web.stanford.edu/~mrosenfe/vang_jimmy_socialexplorerpresentation.pptx" target="_blank">slides about Ferguson</a>.<br/>
+    * US <a href="https://www.justice.gov/opa/pr/justice-department-announces-findings-investigation-baltimore-police-department" target="_blank">Dept. of Justice report on Baltimore policing</a>, August
+    2016.<br/>
+    * An interesting<a href="https://www.nytimes.com/2017/08/17/opinion/republicans-white-supremacy-charlottesville.html" target="_blank">Charles Blow column</a>about the racial animus behind the
+    origin of the war on drugs.</p>
+<p><strong>Cases cited in
+    Alexander's The New Jim Crow:</strong><a href="https://scholar.google.com/scholar_case?case=17773604035873288886&amp;q=terry+v.+ohio&amp;hl=en&amp;as_sdt=2003" target="_blank">Terry v. Ohio</a>(US Supreme Court 1968,extending right of
+    police to stop and frisk people in public without a warrant); <a href="https://scholar.google.com/scholar?hl=en&amp;q=florida+v.+bostick&amp;btnG=&amp;as_sdt=2003" target="_blank">Florida v. Bostick</a>(US Supreme Court 1991, allowing
+    police sweeps on the theory that individuals can refuse); <a href="https://scholar.google.com/scholar_case?case=7758058036179057649&amp;q=atwater+v.+city+of+lago+vista&amp;hl=en&amp;as_sdt=2003" target="_blank">Atwater v. City of Lago Vista</a>(US Supreme Court 1991,
+    ruling that police can hold someone in jail for a misdemeanor that would
+    carry no jail time); <a href="https://scholar.google.com/scholar_case?case=12618142537190502279&amp;q=Harmelin+v.+Michigan&amp;hl=en&amp;as_sdt=2003" target="_blank">Harmelin v. Michigan</a>(US Supreme Court 1991, affirming
+    a mandatory life sentence without parole for posession of a pound of crack
+    cocaine); <a href="https://scholar.google.com/scholar_case?case=9250013508521215438&amp;q=McCleskey+v.+Kemp&amp;hl=en&amp;as_sdt=2006" target="_blank">McCleskey v. Kemp</a>(US Supreme Court 1987, affirming the
+    death penalty despite racial disparity in who is given the death penalty); <a href="https://scholar.google.com/scholar_case?case=4587981977816900853&amp;q=los+angeles+v.+lyons&amp;hl=en&amp;as_sdt=2006" target="_blank">Los Angeles v. Lyons</a>(US Supreme Court 1983, ruling
+    that Lyons could not sue the LAPD to enjoin the LAPD from applying
+    chokeholds, since he could not prove he would be the subject of a chokehold
+    in the future). A major reversal to New York's stop and frisk policy was
+    the 2013 <a href="https://scholar.google.com/scholar_case?case=390056199313197546" target="_blank">Floyd v. City of New York</a>case (Federal district court,
+    2013), which found New York's use of stop and frisk to be unconstititional.
+    </p>
+<p><strong>Three terrific
+    undergraduate student theses from recent years that I will refer to in the
+    class.</strong><br/>
+    1) Kelsey Finch's <a href="https://web.stanford.edu/~mrosenfe/kfinch_honors%20thesis_sharing.pdf" target="_blank">Trouble in Paradise: Postwar History of San Francisco's
+    Hunters Point Neighborhood</a>, copyright 2008 Kelsey Finch. <br/>
+    2) Jackelyn Hwang's<a href="https://web.stanford.edu/~mrosenfe/Hwang_thesis_sharing.pdf">Perceptions and
+    Borders of the Changing Neighborhood: A Case Study in Philadelphia,</a>
+    copyright 2007 Jackelyn Hwang. For citation or use outside of Soc 149/249/
+    Urb 112, you must get permission from <a href="mailto:jhwang17@gmail.com">Jackelyn
+    Hwang</a>.<br/>
+    3) Gerad Hanono's <a href="https://web.stanford.edu/~mrosenfe/Hanono_Thesis_California_Dreamin.pdf" target="_blank">California Dreamin': Examining the Legacy of the Great Tax
+    Revolt in Chula Vista, California</a>, Copyright 2012 Gerad Hanono. </p>
+<p><strong>Links relating to
+    welfare reform:</strong><br/>
+    See various working papers from the <a href="http://www.jhu.edu/%7Ewelfare/" target="_blank">Three City Study</a>including Andrew Cherlin's paper,
+    "<a href="http://web.jhu.edu/threecitystudy/images/publications/22_Cherlin_ASA2004.pdf" target="_blank">The Consequences of Welfare Reform for Child Well-Being</a>."
+    See also Cherlin et al 2002, <a href="http://www.journals.uchicago.edu/SSR/journal/issues/v76n3/760302/760302.web.pdf" target="_blank">paper from Social Service Review</a><br/>
+    and see also Rebecca Blank's thorough <a href="http://www.jstor.org/view/00220515/sp050002/05x0072t/0" target="_blank">summary and evaluation of welfare reform</a>. See this 2015
+    <a href="https://www.americanprogress.org/issues/poverty/news/2015/04/29/112034/top-5-reasons-why-tanf-is-not-a-model-for-other-income-assistance-programs/" target="_blank">report on TANF</a>from the Center for American Progress.</p>
+<p>Robert Moses's <a href="http://www.bridgeandtunnelclub.com/detritus/moses/index.htm" target="_blank">response to Caro's biography of him</a>. In relation to
+    Robert Moses and in relation to the broader question of how eminent domain
+    is used in the US, see the 2005 Supreme Court decision in <a href="https://web.stanford.edu/~mrosenfe/Kelo_v_New_London_USSC.pdf" target="_blank">Kelo v. New London</a>.</p>
+<p>Where are the Rivers (real name Walton) children now and what is
+    Kotlowitz up to? See this <a href="http://www.chicagotribune.com/news/local/ct-met-interrupters-0814-20110814,0,6469585.story" target="_blank">Chicago Tribune story from Aug 14, 2011</a>.</p>
+<p>With respect to Anderson's story of anti-war activity in Philadelphia,
+    and how a break-in (never solved until recently) at an FBI office in
+    Pennsylvania uncovered evidence of the COINTELPRO program, see this
+    interesting 13 minute <a href="http://www.nytimes.com/2014/01/07/us/burglars-who-took-on-fbi-abandon-shadows.html?hp" target="_blank">NY Times video</a>.</p>
+<p>An interesting graphical <a href="http://www.youtube.com/watch?v=QPKKQnijnsM" target="_blank">demonstration
+    of wealth inequality in the US</a>.</p>
+<p>How progressive is the US Income tax (in theory)? See the <a href="http://www.ntu.org/main/page.php?PageID=19" target="_blank">history
+    of marginal tax rates</a>. </p>
+<p>* <strong>Some additional
+    readings relating to Moynihan's 1965 report:</strong><br/>
+<a href="https://web.stanford.edu/~mrosenfe/Moynihan's%20The%20Negro%20Family.pdf" target="_blank">The Negro
+    Family: The Case For National Action</a>, published by the US Dept. of
+    Labor (PDF file, 4MB). And see Acs et al 2013, <a href="http://www.urban.org/UploadedPDF/412839-The-Moynihan-Report-Revisited.pdf" target="_blank">The Moynihan Report Revisited</a>. See also a <a href="http://www.stanfordalumni.org/news/magazine/2004/novdec/dept/asked.html" target="_blank">brief profile of Stanford Alumnus Charles Ogletree</a>, who
+    describes the student protest against Moynihan at the 1975 Stanford
+    graduation, and also briefly mentions his involvement in a suit for
+    reparations for the 1921 Tulsa riot. See also this 2015 <a href="http://www.theatlantic.com/magazine/archive/2015/10/the-black-family-in-the-age-of-mass-incarceration/403246/" target="_blank">Atlantic magazine profile of Moynihan</a>and government
+    policy by Coates.</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_155">
+        <summary>
+          <span class="course-code">Soc 155 / 255</span>
+          <span class="course-title">The Family / The Changing American Family</span>
+          <span class="course-term">Fall 2025</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Sociology_155_syllabus.htm">Syllabus</a></p>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc_155_fam_reading_Q.htm">Questions</a>for each reading
+    assignment.</p>
+<p>What is expected of in-class and in-section <a href="https://web.stanford.edu/~mrosenfe/urb_presenters_howto.htm">presenters</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>List of <a href="https://web.stanford.edu/~mrosenfe/Soc_155_Draft_second_assessment.htm">final exam
+    questions</a>(updated for 2024)</p>
+<p>First draft of <a href="https://web.stanford.edu/~mrosenfe/Soc_155_fam_midterm_questions.htm">potential
+    midterm questions</a>(updated)<br/>
+<a href="https://web.stanford.edu/~mrosenfe/soc_155_midterm_graph_2025.pdf">midterm grade distribution</a>
+    (2025) </p>
+<p>Preliminary <a href="https://web.stanford.edu/~mrosenfe/soc_155_data_assignment_instructions.htm" target="_blank">Instructions for the GSS paper project</a>(updated May
+    2024)</p>
+<p>Soc 255/ Femgen 255 in-class presentations:</p>
+<p>Some Additional Relevant Links:</p>
+<p>* A link to a page of marriage and family<a href="https://web.stanford.edu/~mrosenfe/Marriage_Family_case_law.htm" target="_blank">judicial decisions</a>
+    and notes; you will be responsible for knowing about many of these cases.</p>
+<p>*Relevant to Cherlin's book, a <a href="http://www.newsweek.com/marriage-numbers-110797" target="_blank">2006
+    Newsweek story</a>revisiting an infamous 1986 story on the marriage crunch<br/>
+    *Judith Stacey's "<a href="https://www-jstor-org.stanford.idm.oclc.org/stable/353335" target="_blank">Good Riddance to the Family</a>"<br/>
+    *David Popoenoe's "<a href="http://proquest.umi.com/pqdweb?index=1&amp;did=116329676&amp;SrchMode=1&amp;sid=1&amp;Fmt=12&amp;VInst=PROD&amp;VType=PQD&amp;RQT=309&amp;VName=HNP&amp;TS=1176298719&amp;clientId=12498" target="_blank">Two-Parent Families Are better</a>"<br/>
+    *Moynihan's 1965 Report on "<a href="https://web.stanford.edu/~mrosenfe/Moynihan's%20The%20Negro%20Family.pdf" target="_blank">The Negro
+    Family</a>"<br/>
+    *Acs et al 2013 "<a href="https://www.urban.org/research/publication/moynihan-report-revisited" target="_blank">The Moynihan Report Revisited</a>" <br/>
+    *A 1995 US Dept. Health and Human Services Report on <a href="http://www.cdc.gov/nchs/data/misc/wedlock.pdf" target="_blank">Unmarried
+    Childbearing</a><br/>
+    *Rosenfeld's 2010 paper on <a href="http://www.stanford.edu/~mrosenfe/Rosenfeld_Nontraditional_Families_Demography.pdf" target="_blank">Nontraditional Families and Childhood Progress Through
+    School <br/>
+</a>*Some figures on the <a href="http://www.stanford.edu/~mrosenfe/Rosenfeld_3_figures_phantom_boomerang.pdf" target="_blank">trends in living alone</a>.<br/>
+    *A 2003 US Census report on <a href="https://web.stanford.edu/~mrosenfe/US%20census%202000%20report%20on%20marriage%20and%20cohab.pdf" target="_blank">Marriage and Cohabitation</a><br/>
+    *An international comparison of <a href="http://family.jrank.org/pages/1216/Nonmarital-Childbearing-Nonmarital-Childbearing-in-Developed-Nations.html" target="_blank">Non-Marital Fertility Rates</a><br/>
+    *Smith, Morgan, and Cox<a href="http://www.jstor.org/stable/2061868" target="_blank">paper on Nonmarital fertility</a><br/>
+    *Ruggles <a href="http://www.jstor.org/stable/2096137" target="_blank">paper
+    on history of black family structure</a><br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/PEW_EMP_UPS_AND_DOWNS.pdf" target="_blank">A Pew Study on gender
+    and income over time</a>, with some interesting implications about how
+    divorce has changed over time.<br/>
+    * A <a href="http://www.pewresearch.org/key-data-points/gay-marriage-key-data-points-from-pew-research/" target="_blank">Pew study on attitudes towards same-sex marriage</a>.<br/>
+    * A <a href="https://web.stanford.edu/~mrosenfe/Donaldson_report_foster_care.pdf" target="_blank">report on
+    foster care in the US</a>. </p>
+<p>Two graphs to get you thinking about life course versus historical and
+    cohort effects, from the 2000 CPS. <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/mean%20income%20by%20age%20and%20gender.pdf">Mean
+    income by age and gender</a>, and <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/mean%20educ%20by%20age%20and%20gender.pdf">mean
+    education by age and gender</a>.. Figures for <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/health%20by%20age.pdf">health status by age</a>are
+    here.</p>
+<p>A few movie scenes from two movies that relate to the Changing American
+    Family (and interestingly, all scenes star Dustin Hoffman). An early scene
+    documenting a <a href="https://www.youtube.com/watch?v=PSxihhBzCjk" target="_blank">generational divide</a>, and the two final scenes from The
+    Graduate (directed by Mike Nichols, 1967): the <a href="https://www.youtube.com/watch?v=qzcWgtb1ERo" target="_blank">church
+    scene</a>and the<a href="https://www.youtube.com/watch?v=14pdNYXY3Zo" target="_blank">escape</a>. From Kramer vs. Kramer (directed by Robert
+    Benton, 1979): Meryl Streep as <a href="https://www.youtube.com/watch?v=Pav97ykoMUI" target="_blank">Mrs.
+    Kramer leaves</a>, Mr. Kramer<a href="https://www.youtube.com/watch?v=Cw1YwZlfijg" target="_blank">learns
+    to cook</a>, and discussing <a href="https://www.youtube.com/watch?v=yVM79wY0s_Q" target="_blank">custody</a>
+    with his son.</p>
+<p>A <a href="http://www.pewsocialtrends.org/2013/03/14/modern-parenthood-roles-of-moms-and-dads-converge-as-they-balance-work-and-family/" target="_blank">Pew Report</a>with interesting findings on the time use of
+    husbands and wives, 2011 compared to 1965.</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_180B">
+        <summary>
+          <span class="course-code">Soc 180B / 280B</span>
+          <span class="course-title">Introduction to Data Analysis (Undergraduate)</span>
+          <span class="course-term">Spring 2019</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_180B_Eval_Evidence_syllabus.htm" target="_blank">Syllabus</a></p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc_280B_present_guidelines.htm" target="_blank">Guidelines for
+    the Soc 280B presentation and proposal</a>.</p>
+<p>Soc 280B presentation schedule (upload to Coursework one week before
+    presentation)</p>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_180B_guidelines_work_together.htm" target="_blank">Guidelines
+    for working together on home work</a></p>
+<p><strong>Key Materials you will
+    need for class, which we will be referring to all quarter long:</strong>
+</p>
+<p>My own brief<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Intro%20to%20STATA%20for%20Soc%20180.htm">
+    Introduction</a>to STATA, contains lots of key information.</p>
+<p>I strongly recommend that you purchase a license for Stata on your own
+    machine because the experience is better, but if you are absolutely
+    committed to running Stata for free on Stanford's network, instructions for
+    how to get started are <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/how%20to%20use%20Stata%20on%20Farmshare.htm" target="_blank">here</a>.</p>
+<p>My notes on<a href="https://web.stanford.edu/~mrosenfe/research_terminology.htm">research terminology</a>
+    and types of bias are here. This page will be undergoing regular revision
+    during the class, so be sure to check back. Newly added: my notes on the<a href="https://web.stanford.edu/~mrosenfe/soc180B_notes_mean_variance.pdf">mean, the variance, and simple
+    statistics</a>(these notes under construction). An<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/means_stdev_worksheet_new_version.xlsx" target="_blank">
+    Excel file on means and standard error</a>s (will be updated and Note: the
+    Excel file is not formatted for printing). Freedman's and Rice's <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Freedman's_T_and_Z_tables.pdf" target="_blank">statistical
+    distribution tables</a>from the back of the book (T, Z, chisquare, and F).
+    My notes on <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_regression_whatchanges.htm" target="_blank">what changes and what doesn't change in regression</a>when
+    you change the inputs. A few slides about <a href="https://web.stanford.edu/~mrosenfe/soc_meth_sampling_slides.pptx" target="_blank">sampling and
+    hypothesis testing</a>. </p>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc180B_final_draft_for_students.htm" target="_blank">Final Exam Preview</a>is ready. </p>
+<p>* Readings from a famous debate about the influence of outliers. 1) <a href="http://www.jstor.org/stable/2095411" target="_blank">Jasso's original
+    article on coital frequency</a>. 2) <a href="http://www.jstor.org/stable/2095496">Kahn and Udry's critiqu</a>e. 3)
+    <a href="http://www.jstor.org/stable/2095497" target="_blank">Jasso's
+    response</a>. </p>
+<p><strong>The CPS dataset:</strong><br/>
+    *The dataset for HW 1, and most of the rest of the homeworks is the <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/cps_mar_2000_new.dta">2000 March CPS dataset</a>
+    (14MB, Stata 10 version). Right-click to download the data files. I include
+    here some <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Some%20housekeeping%20I%20have%20done%20with%20the%20March%20200%20CPS%20file.htm" target="_blank">housekeeping procedures</a>I have done to the March CPS
+    file which may helpful to you when you work with your own CPS files.</p>
+<p><strong>Homeworks, and their
+    associated files:</strong><br/>
+    * The first assignment for the quantitative part of the class is<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Proj_3_first_assign.htm">HW1.</a><br/>
+    * As part of HW 1, you will be required to <a href="http://cps.ipums.org/cps/index.shtml" target="_blank">register with
+    ipums CPS</a>, and download a dataset of your own</p>
+<p>* <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc_180B_HW2.htm" target="_blank">HW 2</a>
+    assignment. <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc_180B_HW3.htm" target="_blank">HW3 assignment</a>
+    is now available. <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc_180B_HW4.htm" target="_blank">HW4 assignment</a>
+    Has Been Updated Feb 25, 2010 (so make sure you have the latest version),
+    datasets for HW4:<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Anscombe's_data.xls">Anscombe's
+    data</a>(Excel format) and a <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fifty_state_dataset.dta">50-state CPS dataset</a>
+    (Stata format).</p>
+<p>A link for <a href="ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt" target="_blank">CPI inflation data</a>.</p>
+<p>The variables and their descriptions are best located at the website <a href="http://cps.ipums.org/cps/" target="_blank">[www.ipums.org](https://www.ipums.org)</a>, where
+    the data come from. You will find that ipums is easy to navigate and has
+    lots of relevant information. You can register for free and create your own
+    dataset. For class purposes, I will be using<br/>
+    * <a href="http://cps.ipums.org/cps-action/variableGroups.do" target="_blank">ipums variable descriptions</a>for CPS<br/>
+    * and <a href="http://cps.ipums.org/cps/documentation.shtml" target="_blank">ipums
+    introduction to the CPS methodology</a></p>
+<p>-----------------------------<br/>
+    2019 Class logs</p>
+<p>* <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc180B_spr2019_logs/class1_log.htm" target="_blank">class 1 log</a>, on tabulate and summarize<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc180B_spr2019_logs/class2_log.htm" target="_blank">class 2 log</a>, creating new variables and labels, table,
+    tabulate, summarize, and codebook.<br/>
+    * class 3: no log, didn't use Stata<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc180B_spr2019_logs/class4_log.htm" target="_blank">class 4 log</a>, equal and unequal ttests, and associated P
+    values. <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc180B_spr2019_logs/class5_log.htm" target="_blank">class 5 log</a>, HW2 related ttests, box plots, and
+    commands to display distributions.<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc180B_spr2019_logs/class6_log.htm" target="_blank">Class 6 log</a>, our first regression, compared to t-test
+    and with a brief dummy variable creation example.<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc180B_spr2019_logs/class10_log.htm" target="_blank">Class 10 log</a>, some helpful guidance about how to get
+    started on HW3 Q1<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc180B_spr2019_logs/class12_log.htm" target="_blank">Class 12 log</a>, getting started with HW4 stuff: plotting
+    Anscombe's data, plotting the 50 state data, and syntax for residuals and
+    dfbetas. </p>
+<p>------------------------------</p>
+<p>*old, 2013 Stata class logs</p>
+<p>* <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_win2013/class1.htm" target="_blank">class
+    1 log</a>, on tabulate and summarize.<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_win2013/class2.htm" target="_blank">class
+    2 log</a>, on generating new variables, on variable lables, and a bit on
+    summarize, table, and t-test.<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_win2013/class3.htm" target="_blank">class
+    3 log</a>, revisiting some HW1 related Stata tools.<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_win2013/class4.htm" target="_blank">class
+    4 log</a>, t-test and t-distribution.<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_win2013/class5.htm" target="_blank">class
+    5 log</a>, dummy variables, weights, regression, and changes of scale.<br/>
+    * class 6, no log<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_win2013/class7.htm" target="_blank">class
+    7 log</a>, on regression with dummy variables and changing the comparison
+    category<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_win2013/class10.htm" target="_blank">class
+    10 log</a>, graphing anscombe's data, with fits and residuals, also how to
+    make the Vietnam vet dummy variable.<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_win2013/class12.htm" target="_blank">class
+    12 log</a>, on residuals, graphing, and dfbetas. <br/>
+    -------------------------------------</p>
+<p><b>Supplementary information:<br/>
+</b>* In case you need it, but you probably won't, A <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/zipped_multiyear_cps.ZIP">multiyear CPS dataset</a>,
+    in zipped format (37MB Zipped, 95MB when expanded, Stata 10 version). Here
+    is a link to the <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/codebook_multiyearCPS_extraction.htm" target="_blank">ipums
+    codebook</a>for the CPS data extraction I used (the 2000 data is just a
+    subset of this multiyear extraction). </p>
+<p>My<a href="https://web.stanford.edu/~mrosenfe/merging_to_create_couples.htm" target="_blank">notes on how
+    to match husband to wife or householder to partner</a>, to create couples
+    data, using STATA and census data from ipums.</p>
+<p>Two graphs to get you thinking about life course versus historical and
+    cohort effects, from the 2000 CPS. <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/mean%20income%20by%20age%20and%20gender.pdf">Mean
+    income by age and gender</a>, and <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/mean%20educ%20by%20age%20and%20gender.pdf">mean
+    education by age and gender</a>. A <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/age%20and%20income%20and%20ed.html">log</a>for the
+    creation of the graphs is here. Figures for <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/health%20by%20age.pdf">health status by age</a>are
+    here, embedded with commands and notes. </p>
+<p><strong>Some additional
+    reading that we may or may not get to:</strong></p>
+<p>* On the subject of what to do when sampling fraction is 1 (see <a href="http://www.emathzone.com/tutorials/basic-statistics/sampling-fraction.html" target="_blank">here</a>for a definition of sampling fraction), see blog
+    posts by Statistician Andrew Gelman <a href="http://andrewgelman.com/2011/10/how-do-you-interpret-standard-errors-from-a-regression-fit-to-the-entire-population/" target="_blank">here</a>and <a href="http://andrewgelman.com/2009/07/how_does_statis/" target="_blank">here</a>,
+    and see this <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1940260/pdf/1471-2288-7-35.pdf" target="_blank">paper by Desbien</a>s.</p>
+<p>* "<a href="http://psycnet.apa.org/journals/amp/49/12/997/" target="_blank">The Earth is Round</a>" by Jacob Cohen, on Null
+    Hypothesis testing and Bayesian inference</p>
+<p><br/>
+    * Lisse et al's <a href="http://web.ebscohost.com/ehost/detail?sid=896f73bb-7190-4926-8a3d-ed7b1550164f%40sessionmgr14&amp;vid=1&amp;hid=19&amp;bdata=JnNpdGU9ZWhvc3QtbGl2ZSZzY29wZT1zaXRl#db=aph&amp;AN=11026837" target="_blank">2003 paper from the Annals of Internal Medicine</a>on the
+    hazards of Vioxx (Rofecoxib), for a discussion of the dangers that can
+    befall us when we don't take the power of tests into account.</p>
+<p>* On the subject of data presentation with maps, see these <a href="http://www-personal.umich.edu/%7Emejn/election/2008/" target="_blank">area-weighted
+    cartographs of election results</a>. On the subject of Tufte and data
+    presentation, see Peter Norvig's parody of Powerpoint using the<a href="http://norvig.com/Gettysburg/" target="_blank">Gettysburg Address</a>....</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc202">
+        <summary>
+          <span class="course-code">Soc 202</span>
+          <span class="course-title">Junior Seminar: Preparation for Research</span>
+          <span class="course-term">Fall 2023</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc_202_syllabus.htm">Syllabus</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/freshman%20seminar%20presentation%20how%20to.htm">Guide</a>on
+    how to present</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_204A">
+        <summary>
+          <span class="course-code">Soc 204A</span>
+          <span class="course-title">Senior Capstone Research Seminar, Part 1</span>
+          <span class="course-term">Fall 2025</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc_204A_syllabus.htm">Syllabus</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/freshman%20seminar%20presentation%20how%20to.htm">Guide</a>on
+    how to present</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_323">
+        <summary>
+          <span class="course-code">Soc 323</span>
+          <span class="course-title">Sociology of the Family (graduate)</span>
+          <span class="course-term">Winter 2025</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/Sociology_323_syllabus.htm" target="_blank">Syllabus</a></p>
+<p>Supplemental reading list and discussant/ presenter assignments are
+    posted on Canvas.</p>
+<p>Some <a href="https://web.stanford.edu/~mrosenfe/Soc_323_family_reading_instructions.pdf" target="_blank">guidelines</a>
+    about how to approach and interpret scholarly work.</p>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc_323_notes_on_papers_and_presenters.htm" target="_blank">Notes
+    and instructions</a>for paper writers, presenters, and commentators.</p>
+<p>A brief note on the population <a href="https://web.stanford.edu/~mrosenfe/doubling_time.pdf" target="_blank">doubling time</a>, and how it is calculated.</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_381">
+        <summary>
+          <span class="course-code">Soc 381</span>
+          <span class="course-title">Introduction to Data Analysis (PhD)</span>
+          <span class="course-term">Fall 2021</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_381_data_analysis_syllabus.htm" target="_blank">Syllabus</a>
+</p>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc_280B_present_guidelines.htm" target="_blank">Guidelines for
+    the Soc 381 presentation and proposal</a>.</p>
+<p>Soc 381 presentation schedule</p>
+<p>Soc 381<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc_381_lecture_menu.htm" target="_blank">
+    lecture table of contents</a>(updated as we go)</p>
+<p>Stanford library resources for using Stata on Farmshare for <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/farmshare_windows_instr.pdf">Windows</a>and for <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/farmshare_mac_instr.pdf">Macs</a>, and my quick <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/how%20to%20use%20Stata%20on%20Farmshare.htm" target="_blank">telnet</a>session.</p>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_180B_guidelines_work_together.htm" target="_blank">Guidelines
+    for working together on home work</a></p>
+<p>My notes on<a href="https://web.stanford.edu/~mrosenfe/research_terminology.htm">research terminology</a>
+    and types of bias are here. This page will be undergoing regular revision
+    during the class, so be sure to check back. Newly added: my notes on the<a href="https://web.stanford.edu/~mrosenfe/soc180B_notes_mean_variance.pdf">mean, the variance, and simple
+    statistics</a>(these notes under construction). A new and updated version
+    of the<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/means_stdev_worksheet_new_version.xlsx" target="_blank">class Excel file </a>is available in .xlsx format, which
+    seem to work better for now (will be updated regularly and note: the Excel
+    file is not formatted for printing). Freedman's and Rice's <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Freedman's_T_and_Z_tables.pdf" target="_blank">statistical
+    distribution tables</a>from the back of the books (includes the T and Z
+    distributions, plus also chisquare and F distributions). My notes on <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/soc_180B_regression_whatchanges.htm" target="_blank">what
+    changes and what doesn't change in regression</a>when you change the
+    inputs. A few slides about <a href="https://web.stanford.edu/~mrosenfe/soc_meth_sampling_slides.pptx" target="_blank">sampling and hypothesis testing</a>. A set of notes on <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/mediation_notes.pdf">mediation tests</a>.</p>
+<p>On the matrix algebra of OLS regression: one nice summary from <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf" target="_blank">NYU</a>, and
+    one from <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_2_Beck_UCSD.pdf" target="_blank">UCSD</a>.
+    If you need a refresher on matrix multiplication, see <a href="https://youtu.be/kuixY2bCc_0" target="_blank">here</a>, and on how to
+    find matrix inverses by hand, see <a href="https://youtu.be/G1_8E4oEVII" target="_blank">here</a>, and for an example of matrix algebra applied to
+    OLS regression, see <a href="https://www.youtube.com/watch?v=Lx6CfgKVIuE" target="_blank">here</a>.</p>
+<p>* On the age-period-cohort problem see these graphs created from
+    cross-sectional data: <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/mean%20educ%20by%20age%20and%20gender.pdf" target="_blank">Education by age</a>, and <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/mean%20income%20by%20age%20and%20gender.pdf" target="_blank">Income by age</a>.</p>
+<p>* On the subject of data presentation with maps, see these <a href="http://www-personal.umich.edu/%7Emejn/election/2008/" target="_blank">area-weighted
+    cartographs of election results</a>. On the subject of Tufte an data
+    presentation, see Peter Norvig's parody of Powerpoint using the<a href="http://norvig.com/Gettysburg/" target="_blank">Gettysburg Address</a>.</p>
+<p>* Materials relating to a famous debate about the influence of outliers.
+    1) <a href="http://www.jstor.org/stable/2095411" target="_blank">Jasso's
+    original article on coital frequency</a>. 2) <a href="http://www.jstor.org/stable/2095496">Kahn and Udry's critiqu</a>e. 3)
+    <a href="http://www.jstor.org/stable/2095497" target="_blank">Jasso's
+    response</a>.</p>
+<p>*<u>Some addition literature we may read later in the quarter:</u><br/>
+    * "<a href="http://psycnet.apa.org/journals/amp/49/12/997/" target="_blank">The Earth is Round</a>" by Jacob Cohen, on Null
+    Hypothesis testing and Bayesian inference<br/>
+    * Lisse et al's <a href="http://web.ebscohost.com/ehost/detail?sid=896f73bb-7190-4926-8a3d-ed7b1550164f%40sessionmgr14&amp;vid=1&amp;hid=19&amp;bdata=JnNpdGU9ZWhvc3QtbGl2ZSZzY29wZT1zaXRl#db=aph&amp;AN=11026837" target="_blank">2003 paper from the Annals of Internal Medicine</a>on the
+    hazards of Vioxx (Rofecoxib), for a discussion of the dangers that can
+    befall us when we don't take the power of tests into account.<br/>
+    * Two papers by Rosenfeld <a href="http://www.stanford.edu/%7Emrosenfe/Bulls%20Riot.pdf" target="_blank">here</a>
+    and <a href="http://www.jstor.org/stable/4145376" target="_blank">here</a>
+    that include logistic regression, for examples of how to (and how not to)
+    present logistic regression results.<br/>
+    * More papers with good/useful logistic regression output tables: <a href="http://www.jstor.org/stable/2657491" target="_blank">Gould on
+    collective violence in ASR 1999</a>and <a href="http://www.jstor.org/stable/2657490" target="_blank">Brines and
+    Joyner on couple dissolution</a>also in ASR 1999.<br/>
+    * On the subject of what to do when sampling fraction is 1 (see Rice p. 194
+    for definition of sampling fraction), see blog posts by Statistician Andrew
+    Gelman <a href="http://andrewgelman.com/2011/10/how-do-you-interpret-standard-errors-from-a-regression-fit-to-the-entire-population/" target="_blank">here</a>and <a href="http://andrewgelman.com/2009/07/how_does_statis/" target="_blank">here</a>,
+    and see this <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1940260/pdf/1471-2288-7-35.pdf" target="_blank">paper by Desbien</a>s.<br/>
+    * If you are wondering whether scholars still publish empirical papers with
+    OLS regression as the main tool, the answer is yes, and here are a couple
+    of examples from the family studies literature: <a href="http://www.jstor.org/stable/2580551" target="_blank">Amato et al on
+    Divorce and children</a>, Social Forces 1995, and<a href="http://www.jstor.org/stable/3654649" target="_blank">Carlson and
+    Corcoran on family stability and children</a>, JMF 2001</p>
+<p>*The dataset for HW 1, and most of the rest of the homeworks is the <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/cps_mar_2000_new.dta">2000 March CPS dataset</a>
+    (14MB, Stata 10 version). Right-click to download the data files. I include
+    here some <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Some%20housekeeping%20I%20have%20done%20with%20the%20March%20200%20CPS%20file.htm" target="_blank">housekeeping procedures</a>I have done to the March CPS
+    file which may helpful to you when you work with your own CPS files.</p>
+<p>My own brief<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Intro%20to%20STATA%20for%20Soc%20180.htm">
+    Introduction</a>to STATA, contains lots of key information. </p>
+<p><br/>
+    * The first assignment for the quantitative part of the class is<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Proj_3_first_assign.htm">HW1.</a><br/>
+    * As part of HW 1, you will be required to <a href="http://cps.ipums.org/cps/index.shtml" target="_blank">register with
+    ipums CPS</a>, and download a dataset of your own</p>
+<p>* <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc_180B_HW2.htm" target="_blank">HW 2</a>
+    assignment. <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc_180B_HW3.htm" target="_blank">HW3 assignment</a>
+    is now available. <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Soc_180B_HW4.htm" target="_blank">HW4 assignment</a>
+    Has Been Updated (so make sure you have the latest version), datasets for
+    HW4:<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/Anscombe's_data.xls">Anscombe's data</a>
+    (Excel format) and a <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fifty_state_dataset.dta">50-state
+    CPS dataset</a>(Stata format), and a <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/GSS_subset_200610_panel.dta">GSS dataset</a>for
+    2006-10.</p>
+<p>A link for <a href="https://data.bls.gov/cgi-bin/cpicalc.pl" target="_blank">CPI inflation data</a>.</p>
+<p>The variables and their descriptions are best located at the website <a href="http://cps.ipums.org/cps/" target="_blank">[www.ipums.org](https://www.ipums.org)</a>, where
+    the data come from. You will find that ipums is easy to navigate and has
+    lots of relevant information. You can register for free and create your own
+    dataset. For class purposes, I will be using<br/>
+    * <a href="http://cps.ipums.org/cps-action/variableGroups.do" target="_blank">ipums variable descriptions</a>for CPS<br/>
+    * and <a href="http://cps.ipums.org/cps/documentation.shtml" target="_blank">ipums
+    introduction to the CPS methodology</a></p>
+<p><strong>Fall 2021 class logs:</strong><br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2021_logs/class1.htm" target="_blank">First
+    class log</a>(tabulate, summarize)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2021_logs/class2.htm" target="_blank">Second
+    class log</a>(t-test, probability of t, labels, ingesting data)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2021_logs/class3.htm">Third class log</a>
+    (SD, SE, ttest and normal values)<br/>
+    * Fourth class, no Stata log<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2021_logs/class5.htm" target="_blank">Fifth
+    class log</a>(how regression compares to t-test, creating dummy vars by
+    hand, box plots and percentiles)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2021_logs/class12.htm">Twelfth class log</a>
+    (a brief one on plotting fitted values and marginsplot)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2021_logs/class13.htm" target="_blank">Thirteenth
+    class log</a>(calculating the LRT, the BIC, and the probabilities
+    associated with both). <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2021_logs/class14.htm" target="_blank">Fourteenth
+    class log</a>(scatter plots with best fit OLS lines overlayed, dfbetas,
+    identifying points of most influence or largest residual)</p>
+<p><strong>Fall 2018 class logs:</strong><br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2018_logs/class1_2018.htm" target="_blank">First
+    class log</a>(tabulate, summarize)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2018_logs/class2.htm" target="_blank">Second
+    class log</a>(t-tests, labels, ingesting data, table command)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2018_logs/class3.htm" target="_blank">Third
+    class log</a>(SD, SE, ttest and normal values)<br/>
+    * Fourth class (no log, see class Excel file on ttests) <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2018_logs/class5.htm" target="_blank">Fifth
+    class</a>(box plots, ttests equal and unequal, first regression with dummy
+    vars)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2018_logs/class9.htm" target="_blank">Ninth
+    class</a>(on the variance-covariance matrix)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class11.htm" target="_blank">Eleventh
+    class</a>(on scatter plots, graphing lines and dfbetas) <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2018_logs/lastclass.htm" target="_blank">Last
+    class</a>(on what changes and what doesn't change when the regression
+    inputs are changed) </p>
+<p><strong>Fall 2016 class logs:</strong><br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class1_lot.htm" target="_blank">First
+    class log</a>(tabulate, summarize) <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class2.htm" target="_blank">Second
+    class log</a>(ingestion of data, table, new variables, labels)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class3.htm" target="_blank">Third
+    class log</a>(t and Normal distributions, regression and t-tests)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class4.htm" target="_blank">Fourth
+    class log</a>(box plots, percentiles, rescaling)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class6.htm" target="_blank">Sixth
+    class log</a>(a bit about dummy variables by hand, for HW2) <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class8.htm" target="_blank">Eighth
+    class lo</a>g (a bit on the Variance Covariance matrix, and its uses)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class11.htm" target="_blank">Eleventh
+    class log</a>(graphing and dfbetas)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2016_logs/class18.htm" target="_blank">Class
+    18</a>, on what changes and doesn't change in regression output. </p>
+<p><strong>Fall 2015 class logs:</strong><br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2015_381_logs/class1.htm" target="_blank">First
+    class log</a>(tabulate, summarize, new variables, ingestion of data) <br/>
+    * Class two: There was no class two <br/>
+    * Class Three: No log, we talked about mean, SD, n, and SE.<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2015_381_logs/class4.htm" target="_blank">Class
+    four log</a>(ttests, t and Normal distributions, hypothesis testing) <br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2015_381_logs/class5.htm" target="_blank">Class
+    five log</a>(box plots and percentiles, briefly)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2015_381_logs/class11.htm" target="_blank">Class
+    eleven log</a>(scatter plots, lines, residuals, dfbetas)<br/>
+    * <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/fall_2015_381_logs/class20.htm" target="_blank">Final
+    class log</a>(what change is regression when you change the inputs) </p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_382">
+        <summary>
+          <span class="course-code">Soc 382</span>
+          <span class="course-title">Principles of Regression Analysis (graduate)</span>
+          <span class="course-term">Winter 2019</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_382_data_analysis_syllabus.htm" target="_blank">Syllabus</a></p>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_180B_guidelines_work_together.htm" target="_blank">Guidelines
+    for working together on home work</a></p>
+<p>Two files you will be familiar with:<a href="https://web.stanford.edu/~mrosenfe/soc180B_notes_mean_variance.pdf"><br/>
+    mean, the variance, and simple statistics</a>and the Soc 381 and 382 <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/means_stdev_worksheet_new_version.xlsx" target="_blank">class
+    Excel file</a></p>
+<p>A sprawling page with a broad set of notes on loglinear models are <a href="https://web.stanford.edu/~mrosenfe/soc_388_notes/Soc_388_notes_home.htm" target="_blank">here</a>, including an <a href="https://web.stanford.edu/~mrosenfe/soc_388_notes/Loglin%20Excel%20File.xlsx">Excel file</a>about
+    loglinear models (distinct from our old comprehensive Soc 381 Excel file);
+    and a PDF file about the <a href="https://web.stanford.edu/~mrosenfe/soc_388_notes/PDF%20version%20of%20notes%20on%20different%20families%20of%20distributions.pdf" target="_blank">Poisson distribution and Loglinear models.</a>A little
+    frog dataset I refer to in the loglinear Excel file is <a href="https://web.stanford.edu/~mrosenfe/soc_388_notes/frogs.dta">here</a>. Treiman's 6x6 occupational
+    mobility in china dataset is <a href="https://web.stanford.edu/~mrosenfe/Soc_382/Treimans%20ch%2012%20occ%20mobility%20data%206x6%20version.dta">here</a>.
+    An aditional intermarriage dataset (not for HW 3 but for class is <a href="https://web.stanford.edu/~mrosenfe/Soc_382/five%20cat%20intermar%20data%20US%203%20decades.dta">here</a>,
+    and the same dataset with additional dimensions of year and immigration is <a href="https://web.stanford.edu/~mrosenfe/Soc_382/70,80,90,%20intermarriage%20data.dta">here</a>.</p>
+<p>*An Event History Excel file is <a href="https://web.stanford.edu/~mrosenfe/Soc_382/Soc%20382%20Event%20History%20stuff.xlsx">here</a>. Two event
+    history datasets derived from HCMST 2009 waves 1-5 are posted on Canvas&gt;
+    files.</p>
+<p>Two readings:<br/>
+    * "<a href="http://psycnet.apa.org/journals/amp/49/12/997/" target="_blank">The Earth is Round</a>" by Jacob Cohen, on Null
+    Hypothesis testing and Bayesian inference<br/>
+    * Lisse et al's <a href="http://web.ebscohost.com/ehost/detail?sid=896f73bb-7190-4926-8a3d-ed7b1550164f%40sessionmgr14&amp;vid=1&amp;hid=19&amp;bdata=JnNpdGU9ZWhvc3QtbGl2ZSZzY29wZT1zaXRl#db=aph&amp;AN=11026837" target="_blank">2003 paper from the Annals of Internal Medicine</a>on the
+    hazards of Vioxx (Rofecoxib), for a discussion of the dangers that can
+    befall us when we don't take the power of tests into account. </p>
+<p>* First <a href="https://web.stanford.edu/~mrosenfe/Soc_382/Soc_382_HW1_propsensity_score.htm" target="_blank">homework</a>, propensity score analysis, using our old
+    friend, <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/cps_mar_2000_new.dta">2000 March CPS
+    dataset</a><br/>
+    * Second <a href="https://web.stanford.edu/~mrosenfe/s382_HW2.htm" target="_blank">homework</a>assignment,
+    categorical data analysis, with 2 datasets: a 2x2 table that you can enter
+    yourself, and a 5x5<a href="https://web.stanford.edu/~mrosenfe/soc_388_notes/LA_interar_numeric.dta">
+    LA marriage dataset</a>.<br/>
+    * Third <a href="https://web.stanford.edu/~mrosenfe/s382_HW3.htm">homework</a>assignment, loglinear models<br/>
+    * Fourth homework, Event History analysis in Stata now <a href="https://web.stanford.edu/~mrosenfe/s382_HW4.htm" target="_blank">available</a>.<br/>
+    * Fifth homework assignment, Austin's HW.</p>
+<p>* Class logs<br/>
+    * Intermarriage 5x5 national data, model fitting, first <a href="https://web.stanford.edu/~mrosenfe/Soc_382/loglin%20w%205by5%20intermar.htm" target="_blank">class log</a>
+    1/29/2019<br/>
+    * second intermar class <a href="https://web.stanford.edu/~mrosenfe/Soc_382/logs/2nd%20loglin%20intermar%20class.htm" target="_blank">log</a><br/>
+    * Third intermar class <a href="https://web.stanford.edu/~mrosenfe/Soc_382/logs/3rd%20loglin%20intermar%20class.htm" target="_blank">log</a><br/>
+    * First class event history <a href="https://web.stanford.edu/~mrosenfe/Soc_382/logs/event_history_log1.htm" target="_blank">log</a><br/>
+    * Second class event history <a href="https://web.stanford.edu/~mrosenfe/Soc_382/logs/event_history_class_log2.htm" target="_blank">log</a></p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_388">
+        <summary>
+          <span class="course-code">Soc 388</span>
+          <span class="course-title">Loglinear Models</span>
+          <span class="course-term">Fall 2007</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/s388_draft_syllabus.htm">Syllabus</a></p>
+<p>First <a href="https://web.stanford.edu/~mrosenfe/s388_HW1.htm">homework</a>assignment, due Oct 9</p>
+<p>Second <a href="https://web.stanford.edu/~mrosenfe/s388_HW2.htm">homework</a>assignment due Oct 18, see
+    the links page for the dataset.. <a href="https://web.stanford.edu/~mrosenfe/s388_HW3.htm">Homework 3</a>(due
+    October 30) is here, see class notes on how to download the data. I have
+    also posted <a href="https://web.stanford.edu/~mrosenfe/s388_paper.htm">instructions</a>for the abstract and
+    final paper (NOTE updated due dates and instructions).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_388_notes/Soc_388_notes_home.htm">Link</a>
+    to class notes, datasets, and (eventually) homework solutions</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc385AB">
+        <summary>
+          <span class="course-code">Soc 385A + B</span>
+          <span class="course-title">Second Year Research Practicum (PhD)</span>
+          <span class="course-term">Fall 2019 & Winter 2020</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p>Soc 385A <a href="https://web.stanford.edu/~mrosenfe/Soc_385A_syllabus.htm" target="_blank">syllabus</a>.
+    More information coming soon.</p>
+<p>Soc 385B <a href="https://web.stanford.edu/~mrosenfe/Soc_385B_syllabus.htm" target="_blank">syllabus</a>.</p>
+<p><a href="https://web.stanford.edu/~mrosenfe/Soc_385_project_outline.htm">Outline</a>of a research paper
+    plan.</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+
+      <details class="course" id="Soc_180_280_legacy">
+        <summary>
+          <span class="course-code">Soc 180 / 280</span>
+          <span class="course-title">Introduction to Social Research (superseded by Soc 180B/280B)</span>
+          <span class="course-term">Spring 2004</span>
+        </summary>
+        <div class="course-body">
+          
+          <table>
+<tr>
+<td>
+<p><a href="https://web.stanford.edu/~mrosenfe/soc_method_syllabus.htm">Syllabus</a></p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<p>Project 1, Historical/ Archival: Information: <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj2_how_to_read.htm">Notes</a>on how to read sources, and
+    guide for project 2 <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj2_proposal.htm">proposals</a>.
+    Some additional helpful <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj2_paper.htm">hints</a>about
+    how to write the historical paper. </p>
+<p>Project 1,<b>Historical/ Archival: Information:</b><a href="https://web.stanford.edu/~mrosenfe/Soc_methods_historical_guide.htm">Some notes on potential topics and
+    library resources at Stanford</a>. <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj2_how_to_read.htm">Notes</a>
+    on how to read sources, and guide for project 2 <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj2_proposal.htm">proposals</a>. What are primary and
+    secondary sources? Some additional helpful <a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj2_paper.htm">hints</a>about how to write the historical
+    paper. </p>
+<p>Project 2, Ethnography: Some guidance about what the <a href="https://web.stanford.edu/~mrosenfe/soc_method_proj1_prop.htm">proposal</a>for the first project should
+    look like. Guidelines for the first project <a href="https://web.stanford.edu/~mrosenfe/soc_method_proj1_paper.htm">paper</a>. Some key <a href="https://web.stanford.edu/~mrosenfe/soc_method_Goffman.htm">terms</a>from Goffman.</p>
+</td>
+</tr>
+</table>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>&copy; Michael J. Rosenfeld &middot; Department of Sociology, Stanford University</p>
+    <p><a href="mailto:mrosenfe@stanford.edu">mrosenfe@stanford.edu</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
